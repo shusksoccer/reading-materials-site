@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Material Note",
-  description: "整理された教材とノートのポータルサイト",
+  description: "教材やノートをまとめて閲覧できるサイト",
 };
 
 export default function RootLayout({
@@ -34,7 +34,10 @@ export default function RootLayout({
               Material Note
             </Link>
             <nav>
-              <Link href="/materials" className="text-zinc-600 hover:text-blue-600 transition-colors">
+              <Link
+                href="/materials"
+                className="text-zinc-600 hover:text-blue-600 transition-colors"
+              >
                 教材一覧
               </Link>
             </nav>

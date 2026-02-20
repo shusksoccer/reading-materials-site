@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { listMaterials } from "@/lib/content";
 
 export default function MaterialsPage() {
@@ -10,13 +10,16 @@ export default function MaterialsPage() {
 
       {materials.length === 0 ? (
         <p className="text-zinc-600">
-          contentフォルダにMarkdownがありません（web/content/*.md）。
+          まだ教材がありません。`web/content/*.md` に Markdown ファイルを追加してください。
         </p>
       ) : (
         <ul className="space-y-3">
           {materials.map((m) => (
-            <li key={m.slug} className="border-b border-zinc-100 dark:border-zinc-800 pb-2">
-              <Link 
+            <li
+              key={m.slug}
+              className="border-b border-zinc-100 dark:border-zinc-800 pb-2"
+            >
+              <Link
                 href={`/materials/${m.slug}`}
                 className="text-lg text-blue-600 hover:underline font-medium"
               >

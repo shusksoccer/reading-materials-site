@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -31,9 +31,11 @@ export default function MaterialPage() {
   if (!slug) {
     return (
       <main className="max-w-4xl mx-auto py-8 px-4">
-        <p>slug が取得できません。</p>
+        <p>slug が指定されていません。</p>
         <p className="mt-4">
-          <Link href="/materials" className="text-blue-600 hover:underline">← 一覧へ</Link>
+          <Link href="/materials" className="text-blue-600 hover:underline">
+            一覧へ
+          </Link>
         </p>
       </main>
     );
@@ -42,7 +44,10 @@ export default function MaterialPage() {
   return (
     <main className="max-w-4xl mx-auto py-8 px-4">
       <p className="mb-6">
-        <Link href="/materials" className="text-sm text-zinc-500 hover:text-blue-600 transition-colors">
+        <Link
+          href="/materials"
+          className="text-sm text-zinc-500 hover:text-blue-600 transition-colors"
+        >
           ← 教材一覧へ戻る
         </Link>
       </p>

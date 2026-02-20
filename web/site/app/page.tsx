@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function Home() {
   return (
@@ -6,7 +6,7 @@ export default function Home() {
       <main className="max-w-2xl text-center">
         <h1 className="text-4xl font-bold mb-6">Material Note</h1>
         <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-8">
-          整理された教材とノートのポータルサイトです。
+          教材やノートを整理して、Webで読みやすく公開できます。
         </p>
         <div className="flex gap-4 justify-center">
           <Link

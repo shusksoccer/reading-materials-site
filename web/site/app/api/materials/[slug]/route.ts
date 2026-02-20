@@ -1,11 +1,11 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import { getMaterialHtml } from "@/lib/content";
 
 export async function GET(request: Request) {
-  // params が壊れている環境でも動くように、URLからslugを自前で抜く
+  // Dynamic route params may not be available in all contexts, so slug is parsed from URL.
   const url = new URL(request.url);
   const parts = url.pathname.split("/").filter(Boolean);
-  const slug = parts[parts.length - 1]; // .../api/materials/<slug>
+  const slug = parts[parts.length - 1];
 
   try {
     const data = await getMaterialHtml(slug);
