@@ -1,0 +1,67 @@
+﻿[
+    {
+        "id":  "src-em-intro",
+        "year":  2026,
+        "reliability":  "中",
+        "title":  "Ethnomethodology Intro Notes",
+        "url":  "https://example.com/em-intro",
+        "type":  "article",
+        "author":  "Portal Editorial",
+        "key_points":  [
+                           "EMは日常実践の秩序を扱う",
+                           "説明責任性が鍵"
+                       ]
+    },
+    {
+        "id":  "src-ca-basics",
+        "year":  2026,
+        "reliability":  "中",
+        "title":  "Conversation Analysis Basics",
+        "url":  "https://example.com/ca-basics",
+        "type":  "article",
+        "author":  "Portal Editorial",
+        "key_points":  [
+                           "順番取りと修復",
+                           "録音記録の分析"
+                       ]
+    },
+    {
+        "id":  "src-class-ethics",
+        "year":  2026,
+        "reliability":  "高",
+        "title":  "Classroom Research Ethics",
+        "url":  "https://example.com/class-ethics",
+        "type":  "guide",
+        "author":  "Portal Editorial",
+        "key_points":  [
+                           "同意と匿名化",
+                           "危害回避"
+                       ]
+    },
+    {
+        "id":  "src-breaching-safe",
+        "year":  2026,
+        "reliability":  "高",
+        "title":  "Safe Breaching Protocol",
+        "url":  "https://example.com/breaching-safe",
+        "type":  "guide",
+        "author":  "Portal Editorial",
+        "key_points":  [
+                           "模擬データで実施",
+                           "実生活で他者を困らせない"
+                       ]
+    },
+    {
+        "id":  "src-presentation",
+        "year":  2026,
+        "reliability":  "中",
+        "title":  "Research Presentation Template",
+        "url":  "https://example.com/presentation",
+        "type":  "template",
+        "author":  "Portal Editorial",
+        "key_points":  [
+                           "問い方法結果",
+                           "再現可能性の説明"
+                       ]
+    }
+]

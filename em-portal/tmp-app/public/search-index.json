@@ -1,0 +1,499 @@
+[
+  {
+    "kind": "lessons",
+    "slug": "l1-what-is-em",
+    "title": "l1-what-is-em.md",
+    "tags": [],
+    "text": "--- title: \"L1 エスノメソドロジーとは何か\" slug: \"l1-what-is-em\" lesson_no: 1 duration_min: 50 tags: [\"基礎\",\"観察\"] objectives: [\"EMの対象を説明できる\",\"日常秩序の見方を理解する\",\"授業全体の流れを説明できる\"] prereq: [] next: \"l2-how-to-observe\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 要点 - EMは「常識を否定」ではなく「常識の成立手順を調べる」学習。 - 授業の流れは 観察→記述→分析→検討→発表。 ## 50分 - 導入8分 / 例の読解10分 / 討論12分 / 個人ワーク12分 / 共有8分。 ## ワーク(10分) - 学校の当たり前を1つ選ぶ。 - 事実と期待を2行で書く。 ## 確認 - 根拠を言える説明になっているか。 - 推測だけで書いていないか。 https://www.youtube.com/watch?v=aqz-KE-bpKQ https://drive.google.com/file/d/1AbCdEfGhIjKlMnOp/view"
+  },
+  {
+    "kind": "lessons",
+    "slug": "l2-how-to-observe",
+    "title": "l2-how-to-observe.md",
+    "tags": [],
+    "text": "--- title: \"L2 観察のしかた\" slug: \"l2-how-to-observe\" lesson_no: 2 duration_min: 50 tags: [\"観察\",\"データ\"] objectives: [\"観察ログの形式を理解する\",\"場面と行為を分けて記録できる\",\"観察倫理を守れる\"] prereq: [] next: \"l3-how-to-describe\" sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 要点 - 観察は「印象」ではなく「再確認できる記録」にする。 - 倫理(匿名化・同意・危害回避)を先に確認する。 ## 50分 - 復習10分 / ログ型説明10分 / 観察15分 / 比較10分 / まとめ5分。 ## ワーク(10分) - 同じ場面の記録を2人分比較。 - 記録ルールを3つ作る。 ## 確認 - 事実欄と解釈欄が分かれているか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "lessons",
+    "slug": "l3-how-to-describe",
+    "title": "l3-how-to-describe.md",
+    "tags": [],
+    "text": "--- title: \"L3 記述とデータ化\" slug: \"l3-how-to-describe\" lesson_no: 3 duration_min: 50 tags: [\"記述\",\"データ\"] objectives: [\"時系列で記述できる\",\"発話と行為を区別できる\",\"注釈を使える\"] prereq: [] next: \"l4-ca-entry\" sources: [\"src-ca-basics\"] --- ## 要点 - 観察ログを分析用データへ整える。 - 時刻・発話・行為を分ける。 ## 50分 - 復習8分 / テンプレ説明10分 / 記述演習15分 / 相互校正12分 / まとめ5分。 ## ワーク(10分) - 30秒データを3列で記述。 - 根拠行を1つ示す。 ## 確認 - 事実と感想が混在していないか。 - 順番が崩れていないか。"
+  },
+  {
+    "kind": "lessons",
+    "slug": "l4-ca-entry",
+    "title": "l4-ca-entry.md",
+    "tags": [],
+    "text": "--- title: \"L4 会話分析の入口\" slug: \"l4-ca-entry\" lesson_no: 4 duration_min: 50 tags: [\"会話分析\",\"記述\"] objectives: [\"順番取りを説明できる\",\"修復を見分けられる\",\"短いデータを分析できる\"] prereq: [] next: \"l5-breaching\" sources: [\"src-ca-basics\"] --- ## 要点 - turn-taking(順番取り)とrepair(修復)を読む。 - 会話は順序で意味が変わる。 ## 50分 - 用語10分 / 境界特定15分 / 修復分析15分 / 共有10分。 ## ワーク(10分) - ターン番号を振る。 - 修復候補を2つ指摘する。 ## 確認 - 行番号つきで説明できるか。 - 推測だけで結論にしていないか。"
+  },
+  {
+    "kind": "lessons",
+    "slug": "l5-breaching",
+    "title": "l5-breaching.md",
+    "tags": [],
+    "text": "--- title: \"L5 ブリーチングと背景期待\" slug: \"l5-breaching\" lesson_no: 5 duration_min: 50 tags: [\"基礎\",\"倫理\",\"分析\"] objectives: [\"背景期待を説明できる\",\"ブリーチングを安全条件で設計できる\",\"模擬データを分析できる\"] prereq: [] next: \"l6-project\" sources: [\"src-breaching-safe\",\"src-class-ethics\"] --- ## 要点 - 背景期待を可視化する回。 - 実在の他者を困らせる実施は禁止。模擬データのみ。 ## 50分 - 倫理確認10分 / ケース読解15分 / 期待特定13分 / 比較10分 / まとめ2分。 ## ワーク(10分) - 台本1場面で背景期待を3つ書く。 - 根拠行を明記する。 ## 確認 - 安全ルールを守っているか。 - 期待→逸脱→回復を説明できるか。"
+  },
+  {
+    "kind": "lessons",
+    "slug": "l6-project",
+    "title": "l6-project.md",
+    "tags": [],
+    "text": "--- title: \"L6 個別テーマ化と発表\" slug: \"l6-project\" lesson_no: 6 duration_min: 50 tags: [\"発表\",\"倫理\",\"データ\"] objectives: [\"研究問いを設定できる\",\"方法と倫理を明示できる\",\"発表構成を作れる\"] prereq: [] next: \"\" sources: [\"src-presentation\",\"src-class-ethics\"] --- ## 要点 - 問い・方法・倫理を1枚にまとめる。 - 広いテーマは場面を限定する。 ## 50分 - 候補10分 / 絞り込み12分 / 計画13分 / 倫理10分 / 相互レビュー5分。 ## ワーク(10分) - 1スライド下書きを作る。 - 問い、方法、根拠、倫理を入れる。 ## 確認 - 根拠を示せる問いになっているか。 - 限界を1点書いているか。"
+  },
+  {
+    "kind": "worksheets",
+    "slug": "ws-l1",
+    "title": "ws-l1.md",
+    "tags": [],
+    "text": "--- title: \"WS1 観察ログ\" slug: \"ws-l1\" duration_min: 20 tags: [\"ワーク\",\"実践\"] deliverable: \"記入済みワークシート\" rubric: \"具体性・根拠・倫理配慮・改善提案\" sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 目的 - 授業内容を20分で実践し、提出可能な形にする。 ## 手順 - 1) 場面を限定する。 - 2) 事実を記録する。 - 3) 根拠つきで解釈を書く。 - 4) 倫理チェックを入れる。 ## 記入欄 - 場面: - データ(時刻/発話/行為): - 根拠: - 解釈: - 倫理チェック: ## 評価観点 - 具体性 / 根拠 / 倫理 / 改善点 ## 発展 - 別場面で同じ観点を再実施する。"
+  },
+  {
+    "kind": "worksheets",
+    "slug": "ws-l2",
+    "title": "ws-l2.md",
+    "tags": [],
+    "text": "--- title: \"WS2 観察チェックシート\" slug: \"ws-l2\" duration_min: 20 tags: [\"ワーク\",\"実践\"] deliverable: \"記入済みワークシート\" rubric: \"具体性・根拠・倫理配慮・改善提案\" sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 目的 - 授業内容を20分で実践し、提出可能な形にする。 ## 手順 - 1) 場面を限定する。 - 2) 事実を記録する。 - 3) 根拠つきで解釈を書く。 - 4) 倫理チェックを入れる。 ## 記入欄 - 場面: - データ(時刻/発話/行為): - 根拠: - 解釈: - 倫理チェック: ## 評価観点 - 具体性 / 根拠 / 倫理 / 改善点 ## 発展 - 別場面で同じ観点を再実施する。"
+  },
+  {
+    "kind": "worksheets",
+    "slug": "ws-l3",
+    "title": "ws-l3.md",
+    "tags": [],
+    "text": "--- title: \"WS3 記述テンプレート\" slug: \"ws-l3\" duration_min: 20 tags: [\"ワーク\",\"実践\"] deliverable: \"記入済みワークシート\" rubric: \"具体性・根拠・倫理配慮・改善提案\" sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 目的 - 授業内容を20分で実践し、提出可能な形にする。 ## 手順 - 1) 場面を限定する。 - 2) 事実を記録する。 - 3) 根拠つきで解釈を書く。 - 4) 倫理チェックを入れる。 ## 記入欄 - 場面: - データ(時刻/発話/行為): - 根拠: - 解釈: - 倫理チェック: ## 評価観点 - 具体性 / 根拠 / 倫理 / 改善点 ## 発展 - 別場面で同じ観点を再実施する。"
+  },
+  {
+    "kind": "worksheets",
+    "slug": "ws-l4",
+    "title": "ws-l4.md",
+    "tags": [],
+    "text": "--- title: \"WS4 ターン分けと修復\" slug: \"ws-l4\" duration_min: 20 tags: [\"ワーク\",\"実践\"] deliverable: \"記入済みワークシート\" rubric: \"具体性・根拠・倫理配慮・改善提案\" sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 目的 - 授業内容を20分で実践し、提出可能な形にする。 ## 手順 - 1) 場面を限定する。 - 2) 事実を記録する。 - 3) 根拠つきで解釈を書く。 - 4) 倫理チェックを入れる。 ## 記入欄 - 場面: - データ(時刻/発話/行為): - 根拠: - 解釈: - 倫理チェック: ## 評価観点 - 具体性 / 根拠 / 倫理 / 改善点 ## 発展 - 別場面で同じ観点を再実施する。"
+  },
+  {
+    "kind": "worksheets",
+    "slug": "ws-l5",
+    "title": "ws-l5.md",
+    "tags": [],
+    "text": "--- title: \"WS5 模擬ブリーチング分析\" slug: \"ws-l5\" duration_min: 20 tags: [\"ワーク\",\"実践\"] deliverable: \"記入済みワークシート\" rubric: \"具体性・根拠・倫理配慮・改善提案\" sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 目的 - 授業内容を20分で実践し、提出可能な形にする。 ## 手順 - 1) 場面を限定する。 - 2) 事実を記録する。 - 3) 根拠つきで解釈を書く。 - 4) 倫理チェックを入れる。 ## 記入欄 - 場面: - データ(時刻/発話/行為): - 根拠: - 解釈: - 倫理チェック: ## 評価観点 - 具体性 / 根拠 / 倫理 / 改善点 ## 発展 - 別場面で同じ観点を再実施する。"
+  },
+  {
+    "kind": "worksheets",
+    "slug": "ws-l6",
+    "title": "ws-l6.md",
+    "tags": [],
+    "text": "--- title: \"WS6 発表計画シート\" slug: \"ws-l6\" duration_min: 20 tags: [\"ワーク\",\"実践\"] deliverable: \"記入済みワークシート\" rubric: \"具体性・根拠・倫理配慮・改善提案\" sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 目的 - 授業内容を20分で実践し、提出可能な形にする。 ## 手順 - 1) 場面を限定する。 - 2) 事実を記録する。 - 3) 根拠つきで解釈を書く。 - 4) 倫理チェックを入れる。 ## 記入欄 - 場面: - データ(時刻/発話/行為): - 根拠: - 解釈: - 倫理チェック: ## 評価観点 - 具体性 / 根拠 / 倫理 / 改善点 ## 発展 - 別場面で同じ観点を再実施する。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "accountability",
+    "title": "accountability.md",
+    "tags": [],
+    "text": "--- title: \"用語: accountability\" term: \"accountability\" slug: \"accountability\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - accountability は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "adjacency-pair",
+    "title": "adjacency-pair.md",
+    "tags": [],
+    "text": "--- title: \"用語: adjacency-pair\" term: \"adjacency-pair\" slug: \"adjacency-pair\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - adjacency-pair は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "anonymization",
+    "title": "anonymization.md",
+    "tags": [],
+    "text": "--- title: \"用語: anonymization\" term: \"anonymization\" slug: \"anonymization\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - anonymization は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "background-expectancies",
+    "title": "background-expectancies.md",
+    "tags": [],
+    "text": "--- title: \"用語: background-expectancies\" term: \"background-expectancies\" slug: \"background-expectancies\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - background-expectancies は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "breaching",
+    "title": "breaching.md",
+    "tags": [],
+    "text": "--- title: \"用語: breaching\" term: \"breaching\" slug: \"breaching\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - breaching は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "consent",
+    "title": "consent.md",
+    "tags": [],
+    "text": "--- title: \"用語: consent\" term: \"consent\" slug: \"consent\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - consent は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "context",
+    "title": "context.md",
+    "tags": [],
+    "text": "--- title: \"用語: context\" term: \"context\" slug: \"context\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - context は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "data-session",
+    "title": "data-session.md",
+    "tags": [],
+    "text": "--- title: \"用語: data-session\" term: \"data-session\" slug: \"data-session\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - data-session は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "description",
+    "title": "description.md",
+    "tags": [],
+    "text": "--- title: \"用語: description\" term: \"description\" slug: \"description\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - description は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "deviation",
+    "title": "deviation.md",
+    "tags": [],
+    "text": "--- title: \"用語: deviation\" term: \"deviation\" slug: \"deviation\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - deviation は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "embodiment",
+    "title": "embodiment.md",
+    "tags": [],
+    "text": "--- title: \"用語: embodiment\" term: \"embodiment\" slug: \"embodiment\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - embodiment は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "ethics",
+    "title": "ethics.md",
+    "tags": [],
+    "text": "--- title: \"用語: ethics\" term: \"ethics\" slug: \"ethics\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - ethics は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "fieldnote",
+    "title": "fieldnote.md",
+    "tags": [],
+    "text": "--- title: \"用語: fieldnote\" term: \"fieldnote\" slug: \"fieldnote\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - fieldnote は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "gaze",
+    "title": "gaze.md",
+    "tags": [],
+    "text": "--- title: \"用語: gaze\" term: \"gaze\" slug: \"gaze\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - gaze は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "indexicality",
+    "title": "indexicality.md",
+    "tags": [],
+    "text": "--- title: \"用語: indexicality\" term: \"indexicality\" slug: \"indexicality\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - indexicality は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "inference",
+    "title": "inference.md",
+    "tags": [],
+    "text": "--- title: \"用語: inference\" term: \"inference\" slug: \"inference\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - inference は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "institutional-talk",
+    "title": "institutional-talk.md",
+    "tags": [],
+    "text": "--- title: \"用語: institutional-talk\" term: \"institutional-talk\" slug: \"institutional-talk\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - institutional-talk は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "membership-categorization",
+    "title": "membership-categorization.md",
+    "tags": [],
+    "text": "--- title: \"用語: membership-categorization\" term: \"membership-categorization\" slug: \"membership-categorization\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - membership-categorization は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "norm",
+    "title": "norm.md",
+    "tags": [],
+    "text": "--- title: \"用語: norm\" term: \"norm\" slug: \"norm\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - norm は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "observation",
+    "title": "observation.md",
+    "tags": [],
+    "text": "--- title: \"用語: observation\" term: \"observation\" slug: \"observation\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - observation は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "overlap",
+    "title": "overlap.md",
+    "tags": [],
+    "text": "--- title: \"用語: overlap\" term: \"overlap\" slug: \"overlap\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - overlap は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "presentation",
+    "title": "presentation.md",
+    "tags": [],
+    "text": "--- title: \"用語: presentation\" term: \"presentation\" slug: \"presentation\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - presentation は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "reflexivity",
+    "title": "reflexivity.md",
+    "tags": [],
+    "text": "--- title: \"用語: reflexivity\" term: \"reflexivity\" slug: \"reflexivity\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - reflexivity は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "repair",
+    "title": "repair.md",
+    "tags": [],
+    "text": "--- title: \"用語: repair\" term: \"repair\" slug: \"repair\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - repair は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "sequence",
+    "title": "sequence.md",
+    "tags": [],
+    "text": "--- title: \"用語: sequence\" term: \"sequence\" slug: \"sequence\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - sequence は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "silence",
+    "title": "silence.md",
+    "tags": [],
+    "text": "--- title: \"用語: silence\" term: \"silence\" slug: \"silence\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - silence は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "topic-management",
+    "title": "topic-management.md",
+    "tags": [],
+    "text": "--- title: \"用語: topic-management\" term: \"topic-management\" slug: \"topic-management\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - topic-management は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "transcript",
+    "title": "transcript.md",
+    "tags": [],
+    "text": "--- title: \"用語: transcript\" term: \"transcript\" slug: \"transcript\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - transcript は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "turn-taking",
+    "title": "turn-taking.md",
+    "tags": [],
+    "text": "--- title: \"用語: turn-taking\" term: \"turn-taking\" slug: \"turn-taking\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - turn-taking は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "glossary",
+    "slug": "validity",
+    "title": "validity.md",
+    "tags": [],
+    "text": "--- title: \"用語: validity\" term: \"validity\" slug: \"validity\" aliases: [] related: [\"observation\",\"description\"] examples: [\"学校\",\"SNS\"] tags: [\"用語\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 定義(短い) - validity は、場面の秩序を読むための基本概念です。 ## 例 - 学校: ホームルーム前のやり取り。 - SNS: 返信タイミングや言い回し。 ## 使い方 - まず定義を読む。 - 次に観察ログで該当箇所を1つ示す。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-background-expectancy",
+    "title": "fig-background-expectancy.md",
+    "tags": [],
+    "text": "--- title: \"背景期待モデル\" slug: \"fig-background-expectancy\" tags: [\"図解\",\"基礎\"] alt: \"背景期待が行為理解を支える図\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-breaching-safe",
+    "title": "fig-breaching-safe.md",
+    "tags": [],
+    "text": "--- title: \"安全なブリーチング手順\" slug: \"fig-breaching-safe\" tags: [\"図解\",\"基礎\"] alt: \"模擬データで行う手順図\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-ethics-checklist",
+    "title": "fig-ethics-checklist.md",
+    "tags": [],
+    "text": "--- title: \"倫理チェックリスト\" slug: \"fig-ethics-checklist\" tags: [\"図解\",\"基礎\"] alt: \"データ取得時の倫理確認表\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-learning-route",
+    "title": "fig-learning-route.md",
+    "tags": [],
+    "text": "--- title: \"学習ルート図\" slug: \"fig-learning-route\" tags: [\"図解\",\"基礎\"] alt: \"観察から発表までの学習手順図\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-observation-log",
+    "title": "fig-observation-log.md",
+    "tags": [],
+    "text": "--- title: \"観察ログ見本\" slug: \"fig-observation-log\" tags: [\"図解\",\"基礎\"] alt: \"観察ログの記入見本\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-observe-describe-analyze",
+    "title": "fig-observe-describe-analyze.md",
+    "tags": [],
+    "text": "--- title: \"観察記述分析フロー\" slug: \"fig-observe-describe-analyze\" tags: [\"図解\",\"基礎\"] alt: \"観察記述分析のフロー図\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-presentation-map",
+    "title": "fig-presentation-map.md",
+    "tags": [],
+    "text": "--- title: \"発表構成マップ\" slug: \"fig-presentation-map\" tags: [\"図解\",\"基礎\"] alt: \"問い方法結果倫理の構成図\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-repair-pattern",
+    "title": "fig-repair-pattern.md",
+    "tags": [],
+    "text": "--- title: \"修復パターン\" slug: \"fig-repair-pattern\" tags: [\"図解\",\"基礎\"] alt: \"修復の典型パターン比較図\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-transcript-template",
+    "title": "fig-transcript-template.md",
+    "tags": [],
+    "text": "--- title: \"記述テンプレート\" slug: \"fig-transcript-template\" tags: [\"図解\",\"基礎\"] alt: \"発話行為注釈のテンプレート図\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "figures",
+    "slug": "fig-turn-structure",
+    "title": "fig-turn-structure.md",
+    "tags": [],
+    "text": "--- title: \"ターン構造例\" slug: \"fig-turn-structure\" tags: [\"図解\",\"基礎\"] alt: \"会話ターンの構造例\" sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 使い方 - 授業で板書の補助として使用する。 ## 説明 - 1図1主張で、手順か概念を短く可視化する。"
+  },
+  {
+    "kind": "library",
+    "slug": "lib-1",
+    "title": "lib-1.md",
+    "tags": [],
+    "text": "--- title: \"入門解説ノート\" slug: \"lib-1\" author: \"Portal Editorial\" year: 2026 url: \"https://example.com/library/intro\" difficulty: \"易\" use_case: \"授業導入\" tags: [\"文献\",\"基礎\"] sources: [\"src-em-intro\"] --- ## 何が得られるか - EMの全体像を5分で説明できる。 ## 授業での使い方 - L1導入で配布し、授業の5段階(観察→記述→分析→検討→発表)を確認する。 ## 読むポイント - 用語の定義より、授業での手順に注目する。"
+  },
+  {
+    "kind": "library",
+    "slug": "lib-2",
+    "title": "lib-2.md",
+    "tags": [],
+    "text": "--- title: \"会話分析基礎\" slug: \"lib-2\" author: \"Portal Editorial\" year: 2026 url: \"https://example.com/library/ca\" difficulty: \"中\" use_case: \"記述演習\" tags: [\"文献\",\"会話分析\"] sources: [\"src-ca-basics\"] --- ## 何が得られるか - turn-takingとrepairを、行番号つきで説明する力がつく。 ## 授業での使い方 - L4で配布し、短い会話データにターン番号を振る練習に使う。 ## 読むポイント - 正解探しより、根拠行の示し方を確認する。"
+  },
+  {
+    "kind": "library",
+    "slug": "lib-3",
+    "title": "lib-3.md",
+    "tags": [],
+    "text": "--- title: \"学校場面の観察法\" slug: \"lib-3\" author: \"Portal Editorial\" year: 2026 url: \"https://example.com/library/school\" difficulty: \"中\" use_case: \"観察ログ作成\" tags: [\"文献\",\"観察\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 何が得られるか - 観察ログを「印象」から「再確認可能な記録」に変える手順が分かる。 ## 授業での使い方 - L2で、時刻/発話/行為/状況の4項目チェックに使う。 ## 読むポイント - 事実欄と解釈欄を分ける。"
+  },
+  {
+    "kind": "library",
+    "slug": "lib-4",
+    "title": "lib-4.md",
+    "tags": [],
+    "text": "--- title: \"研究倫理ミニガイド\" slug: \"lib-4\" author: \"Portal Editorial\" year: 2026 url: \"https://example.com/library/ethics\" difficulty: \"易\" use_case: \"倫理確認\" tags: [\"文献\",\"倫理\"] sources: [\"src-class-ethics\",\"src-breaching-safe\"] --- ## 何が得られるか - 匿名化・同意・危害回避の最小基準を確認できる。 ## 授業での使い方 - L5前に配布し、模擬データのみ使用するルールを再確認する。 ## 読むポイント - 「できること」より「してはいけないこと」を先に見る。"
+  },
+  {
+    "kind": "library",
+    "slug": "lib-5",
+    "title": "lib-5.md",
+    "tags": [],
+    "text": "--- title: \"発表設計テンプレ\" slug: \"lib-5\" author: \"Portal Editorial\" year: 2026 url: \"https://example.com/library/presentation\" difficulty: \"易\" use_case: \"発表準備\" tags: [\"文献\",\"発表\"] sources: [\"src-presentation\"] --- ## 何が得られるか - 3分発表を1枚で構成する型が手に入る。 ## 授業での使い方 - L6で、問い/方法/根拠/倫理/限界を埋めるワークに使う。 ## 読むポイント - 結論より先に、問いの限定と根拠提示を確認する。"
+  },
+  {
+    "kind": "people",
+    "slug": "garfinkel",
+    "title": "garfinkel.md",
+    "tags": [],
+    "text": "--- title: \"ハロルド・ガーフィンケル\" slug: \"garfinkel\" tags: [\"研究者\",\"基礎\"] sources: [\"src-em-intro\",\"src-ca-basics\"] --- ## 何をしたか - 日常の当たり前を、観察可能な手続きとして分析する視点を確立した。 ## 授業で使うポイント - 「常識を疑う」ではなく「常識の成立手順を記述する」を学ぶ。 ## 覚える一言 - 当たり前は、相互行為で作られている。"
+  },
+  {
+    "kind": "people",
+    "slug": "jefferson",
+    "title": "jefferson.md",
+    "tags": [],
+    "text": "--- title: \"ゲイル・ジェファーソン\" slug: \"jefferson\" tags: [\"研究者\",\"記述\"] sources: [\"src-ca-basics\"] --- ## 何をしたか - 会話の細部を記録する転写記号法を整え、再分析可能性を高めた。 ## 授業で使うポイント - 言い淀み、間、重なりを省かずに残す意義を学ぶ。 ## 覚える一言 - 細部を残すほど、説明は強くなる。"
+  },
+  {
+    "kind": "people",
+    "slug": "sacks",
+    "title": "sacks.md",
+    "tags": [],
+    "text": "--- title: \"ハーヴィー・サックス\" slug: \"sacks\" tags: [\"研究者\",\"会話分析\"] sources: [\"src-ca-basics\"] --- ## 何をしたか - 会話データを順序として読む方法(会話分析)を発展させた。 ## 授業で使うポイント - ターン番号を振って、どこで意味が作られるかを見る。 ## 覚える一言 - 会話の意味は、順番で決まる。"
+  },
+  {
+    "kind": "people",
+    "slug": "schegloff",
+    "title": "schegloff.md",
+    "tags": [],
+    "text": "--- title: \"エマニュエル・シェグロフ\" slug: \"schegloff\" tags: [\"研究者\",\"会話分析\"] sources: [\"src-ca-basics\"] --- ## 何をしたか - 順番取りや修復の分析を精密化し、会話の組織を明確に示した。 ## 授業で使うポイント - repairの型を区別し、根拠行で説明する練習に使う。 ## 覚える一言 - ずれは会話の壊れではなく、秩序の手がかり。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-1",
+    "title": "faq-1.md",
+    "tags": [],
+    "text": "--- title: \"EMは常識を否定する学問ですか?\" slug: \"faq-1\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 否定ではありません。常識がどの手順で成立するかを、観察記録で説明します。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-10",
+    "title": "faq-10.md",
+    "tags": [],
+    "text": "--- title: \"発表で重視される点は何ですか?\" slug: \"faq-10\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 問いの明確さ、方法の妥当性、根拠、倫理、限界説明の5点を重視します。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-2",
+    "title": "faq-2.md",
+    "tags": [],
+    "text": "--- title: \"EMと会話分析は同じですか?\" slug: \"faq-2\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 同一ではありません。EMは枠組み、CAは会話データを精密に読む具体的方法です。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-3",
+    "title": "faq-3.md",
+    "tags": [],
+    "text": "--- title: \"録音がないと研究できませんか?\" slug: \"faq-3\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 可能です。授業段階では短い観察ログでも、根拠付きなら分析できます。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-4",
+    "title": "faq-4.md",
+    "tags": [],
+    "text": "--- title: \"観察時に個人名を書いてもいいですか?\" slug: \"faq-4\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 原則不可です。個人名は役割名に置換し、特定情報は削除します。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-5",
+    "title": "faq-5.md",
+    "tags": [],
+    "text": "--- title: \"ブリーチングは実際にやってよいですか?\" slug: \"faq-5\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 実施不可です。実在の他者を困らせる行為は禁止し、模擬台本のみ扱います。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-6",
+    "title": "faq-6.md",
+    "tags": [],
+    "text": "--- title: \"研究テーマが広すぎるときは?\" slug: \"faq-6\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 場面・時間・参加者を絞ってください。広い問いは検証不能になりやすいです。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-7",
+    "title": "faq-7.md",
+    "tags": [],
+    "text": "--- title: \"結論が出ない場合は失敗ですか?\" slug: \"faq-7\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 失敗ではありません。未確定部分を含めて、根拠つきで到達点を示せば有効です。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-8",
+    "title": "faq-8.md",
+    "tags": [],
+    "text": "--- title: \"引用と盗用の違いは何ですか?\" slug: \"faq-8\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 引用は出典明記、盗用は出典なし使用です。授業では必ず出典IDを添えます。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  },
+  {
+    "kind": "faq",
+    "slug": "faq-9",
+    "title": "faq-9.md",
+    "tags": [],
+    "text": "--- title: \"データはどれくらい必要ですか?\" slug: \"faq-9\" tags: [\"FAQ\",\"基礎\"] sources: [\"src-em-intro\",\"src-class-ethics\"] --- ## 回答(短く) - 最初は30秒〜2分で十分です。量より、記述の精度と根拠提示を優先します。 ## チェック - 根拠行や出典IDを書いたか。 - 個人特定情報が残っていないか。"
+  }
+]
