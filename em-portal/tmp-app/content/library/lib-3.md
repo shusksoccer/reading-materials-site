@@ -1,19 +1,20 @@
 ﻿---
-title: "学校場面の観察法"
 slug: "lib-3"
-author: "Portal Editorial"
-year: 2026
-url: "https://example.com/library/school"
-difficulty: "中"
-use_case: "観察ログ作成"
-tags: ["文献","観察"]
-sources: ["src-em-intro","src-class-ethics"]
+title: "Schegloff (2000) Overlapping Talk"
+tags: ["会話分析","重なり","文献"]
+sources: ["isca-overlap-2000"]
+status: "reviewed"
+author: "Emanuel A. Schegloff"
+year: 2000
+difficulty: "高"
+use_case: "重なり発話の見方を深める"
+url: "https://www.conversationanalysis.org/schegloff-media-archive/overlapping-talk-and-the-organization-of-turntaking-for-conversation-2000/"
 ---
-## 何が得られるか
-- 観察ログを「印象」から「再確認可能な記録」に変える手順が分かる。
 
-## 授業での使い方
-- L2で、時刻/発話/行為/状況の4項目チェックに使う。
+# Schegloff (2000) Overlapping Talk
 
-## 読むポイント
-- 事実欄と解釈欄を分ける。
+## 読む前のポイント
+- 同時発話を単なる混乱ではなく、会話組織の一部として捉える。
+
+## 授業向けメモ
+- 上級向け。基礎授業では用語紹介にとどめ、分析例は短く扱う。

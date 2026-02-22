@@ -1,21 +1,18 @@
 ﻿---
-title: "用語: breaching"
-term: "breaching"
 slug: "breaching"
-aliases: []
-related: ["observation","description"]
-examples: ["学校","SNS"]
-tags: ["用語","基礎"]
-sources: ["src-em-intro","src-ca-basics"]
+title: "Breaching（ブリーチング）"
+tags: ["基礎","用語","倫理"]
+sources: ["wiley-sem","wikipedia-garfinkel"]
+status: "reviewed"
 ---
-## 定義(短い)
-- breaching は、場面の秩序を読むための基本概念です。
 
-## 例
-- 学校: ホームルーム前のやり取り。
-- SNS: 返信タイミングや言い回し。
+# Breaching（ブリーチング）
 
-## 使い方
-- まず定義を読む。
-- 次に観察ログで該当箇所を1つ示す。
+日常の「当たり前」をあえて崩し、その反応から背景的な期待（background expectancies）を可視化する発想です。
 
+## 授業での扱い
+- 実社会で危険・迷惑になる実践は行わない。
+- 模擬データや安全な例で分析の考え方だけ学ぶ。
+
+## 注意
+- 面白さ優先ではなく、倫理と安全を先に確認する。

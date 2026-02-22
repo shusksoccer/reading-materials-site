@@ -1,21 +1,18 @@
 ﻿---
-title: "用語: indexicality"
-term: "indexicality"
 slug: "indexicality"
-aliases: []
-related: ["observation","description"]
-examples: ["学校","SNS"]
-tags: ["用語","基礎"]
-sources: ["src-em-intro","src-ca-basics"]
+title: "Indexicality（文脈依存性）"
+tags: ["基礎","用語","記述"]
+sources: ["britannica-em","wiley-sem"]
+status: "published"
 ---
-## 定義(短い)
-- indexicality は、場面の秩序を読むための基本概念です。
+
+# Indexicality（文脈依存性）
+
+発話や行為の意味が、その場の文脈・関係・タイミングに依存して決まることです。
 
 ## 例
-- 学校: ホームルーム前のやり取り。
-- SNS: 返信タイミングや言い回し。
+- 「それ、いいね」は、褒め言葉にも皮肉にもなりうる。
+- 意味は語そのものだけでなく、誰がいつどこで言ったかに依存する。
 
-## 使い方
-- まず定義を読む。
-- 次に観察ログで該当箇所を1つ示す。
-
+## 授業での使い方
+- 発話を切り出すときは、前後のやりとりを必ず残す。

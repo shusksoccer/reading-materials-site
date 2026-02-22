@@ -1,14 +1,18 @@
 ﻿---
-title: "ゲイル・ジェファーソン"
 slug: "jefferson"
-tags: ["研究者","記述"]
-sources: ["src-ca-basics"]
+title: "Gail Jefferson"
+tags: ["人物","会話分析","転写"]
+sources: ["oac-jefferson-papers","talkresearch-transcription","wikipedia-jefferson"]
+status: "published"
 ---
-## 何をしたか
-- 会話の細部を記録する転写記号法を整え、再分析可能性を高めた。
 
-## 授業で使うポイント
-- 言い淀み、間、重なりを省かずに残す意義を学ぶ。
+# Gail Jefferson
+
+会話分析で広く使われる転写記号（Jefferson transcription conventions）の整備で知られる研究者です。
+
+## 授業で使う観点
+- どのように記録するかで、見える現象が変わる。
+- 間、重なり、引き伸ばしなどを転写に残すことで分析可能性が上がる。
 
 ## 覚える一言
-- 細部を残すほど、説明は強くなる。
+- 「転写は単なる記録ではなく、分析の道具」

@@ -1,21 +1,21 @@
 ﻿---
-title: "用語: turn-taking"
-term: "turn-taking"
 slug: "turn-taking"
-aliases: []
-related: ["observation","description"]
-examples: ["学校","SNS"]
-tags: ["用語","基礎"]
-sources: ["src-em-intro","src-ca-basics"]
+title: "Turn-taking（順番取り）"
+tags: ["会話分析","用語","観察"]
+sources: ["isca-turntaking-1974","isca-overlap-2000"]
+status: "published"
 ---
-## 定義(短い)
-- turn-taking は、場面の秩序を読むための基本概念です。
 
-## 例
-- 学校: ホームルーム前のやり取り。
-- SNS: 返信タイミングや言い回し。
+# Turn-taking（順番取り）
 
-## 使い方
-- まず定義を読む。
-- 次に観察ログで該当箇所を1つ示す。
+会話で、誰がいつ話すかがどのように調整されるかを扱う会話分析の中心概念です。
 
+## 重要点
+- 順番は完全にランダムではない。
+- 参加者はその場で順番を調整している。
+- 重なり（overlap）も無秩序なノイズとは限らない。
+
+## 授業で見るポイント
+- 発話の切れ目
+- 指名・視線・うなずき
+- 同時開始が起きた後の調整

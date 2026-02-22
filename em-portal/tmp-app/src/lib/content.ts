@@ -1,4 +1,4 @@
-import fs from "node:fs";
+﻿import fs from "node:fs";
 import path from "node:path";
 
 export type ContentKind =
@@ -145,3 +145,4 @@ export function getSourcesByIds(ids: string[]): SourceItem[] {
   const sourceMap = new Map(getSources().map((item) => [item.id, item]));
   return ids.map((id) => sourceMap.get(id)).filter((item): item is SourceItem => Boolean(item));
 }
+

@@ -1,19 +1,20 @@
 ﻿---
-title: "会話分析基礎"
 slug: "lib-2"
-author: "Portal Editorial"
-year: 2026
-url: "https://example.com/library/ca"
+title: "Sacks, Schegloff, Jefferson (1974) Turn-taking"
+tags: ["会話分析","順番取り","文献"]
+sources: ["isca-turntaking-1974"]
+status: "published"
+author: "Harvey Sacks, Emanuel Schegloff, Gail Jefferson"
+year: 1974
 difficulty: "中"
-use_case: "記述演習"
-tags: ["文献","会話分析"]
-sources: ["src-ca-basics"]
+use_case: "会話分析の核概念を学ぶ"
+url: "https://www.conversationanalysis.org/schegloff-media-archive/simplest-systematics-for-turn-taking-language-1974/"
 ---
-## 何が得られるか
-- turn-takingとrepairを、行番号つきで説明する力がつく。
 
-## 授業での使い方
-- L4で配布し、短い会話データにターン番号を振る練習に使う。
+# Sacks, Schegloff, Jefferson (1974) Turn-taking
 
-## 読むポイント
-- 正解探しより、根拠行の示し方を確認する。
+## 読む前のポイント
+- 会話の順番取りを、参加者がその場で管理する仕組みとして捉える古典。
+
+## 授業向けメモ
+- 発話の意味だけでなく、順序・切れ目・応答の組み合わせを見る視点づくりに使う。

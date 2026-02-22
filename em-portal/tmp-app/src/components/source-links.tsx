@@ -1,4 +1,4 @@
-import { getSourcesByIds } from "@/lib/content";
+﻿import { getSourcesByIds } from "@/lib/content";
 
 type Props = {
   sourceIds: string[];
@@ -11,7 +11,7 @@ export function SourceLinks({ sourceIds }: Props) {
 
   return (
     <section className="card source-links" aria-label="参考文献">
-      <h2>参考（外部リンク）</h2>
+      <h2>参考リンク</h2>
       <ul>
         {sources.map((source) => (
           <li key={source.id}>

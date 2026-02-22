@@ -5,6 +5,7 @@ const ROOT = process.cwd();
 const CONTENT_ROOT = path.join(ROOT, "content");
 const OUT_PATH = path.join(ROOT, "public", "search-index.json");
 const COLLECTIONS = ["lessons", "worksheets", "glossary", "figures", "library", "people", "faq"];
+const STATUS_VALUES = new Set(["inbox", "reviewed", "published"]);
 
 function parseScalarValue(raw) {
   const value = raw.trim();
@@ -46,6 +47,9 @@ for (const kind of COLLECTIONS) {
     const raw = fs.readFileSync(fullPath, "utf-8");
     const { data, body } = parseFrontmatter(raw);
     rows.push({
+      status: STATUS_VALUES.has(String(data.status ?? "").toLowerCase())
+        ? String(data.status).toLowerCase()
+        : "unknown",
       kind,
       slug: String(data.slug ?? fileName.replace(/\.md$/, "")),
       title: String(data.title ?? data.term ?? fileName),

@@ -1,21 +1,18 @@
 ﻿---
-title: "用語: repair"
-term: "repair"
 slug: "repair"
-aliases: []
-related: ["observation","description"]
-examples: ["学校","SNS"]
-tags: ["用語","基礎"]
-sources: ["src-em-intro","src-ca-basics"]
+title: "Repair（修復）"
+tags: ["会話分析","用語","分析"]
+sources: ["isca-turntaking-1974","isca-overlap-2000"]
+status: "published"
 ---
-## 定義(短い)
-- repair は、場面の秩序を読むための基本概念です。
+
+# Repair（修復）
+
+会話中の聞き取りづらさ・言い間違い・理解のずれを、その場で直す実践です。
 
 ## 例
-- 学校: ホームルーム前のやり取り。
-- SNS: 返信タイミングや言い回し。
+- 「え、もう一回言って」
+- 「いや、昨日じゃなくて一昨日」
 
-## 使い方
-- まず定義を読む。
-- 次に観察ログで該当箇所を1つ示す。
-
+## 授業での意味
+- 会話が壊れやすいからこそ、参加者は修復の方法を持っていることが見える。

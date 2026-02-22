@@ -1,11 +1,29 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { DocCard } from "@/components/doc-card";
 import { getCollection, getTagMap } from "@/lib/content";
+import { STATUS_OPTIONS, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
-export default function CurriculumPage() {
+export default async function CurriculumPage({
+  searchParams,
+}: {
+  searchParams?: Promise<{ status?: string | string[] }>;
+}) {
   const lessons = getCollection("lessons");
   const tagMap = getTagMap();
   const focusTags = ["基礎", "観察", "記述", "会話分析", "倫理", "発表"];
+  const params = searchParams ? await searchParams : {};
+  const statusFilter = parseStatusFilter(params?.status);
+  const filtered = statusFilter === "all"
+    ? lessons
+    : lessons.filter((lesson) => getStatusValue(lesson.status) === statusFilter);
+
+  const counts = {
+    all: lessons.length,
+    inbox: lessons.filter((lesson) => getStatusValue(lesson.status) === "inbox").length,
+    reviewed: lessons.filter((lesson) => getStatusValue(lesson.status) === "reviewed").length,
+    published: lessons.filter((lesson) => getStatusValue(lesson.status) === "published").length,
+    unknown: lessons.filter((lesson) => getStatusValue(lesson.status) === "unknown").length,
+  } as const;
 
   return (
     <section>
@@ -16,14 +34,31 @@ export default function CurriculumPage() {
           全6コマを、観察から発表まで順番に学ぶ構成です。各コマは50分想定で、
           次の授業につながる最小限の課題を含みます。
         </p>
+        <p className="meta">
+          status: {statusFilter} / {filtered.length}件表示
+        </p>
+        <div className="chip-row" aria-label="status filters">
+          {STATUS_OPTIONS.map((status) => (
+            <Link
+              key={status}
+              href={status === "all" ? "/curriculum" : `/curriculum?status=${status}`}
+              className="chip-link"
+              aria-current={statusFilter === status ? "page" : undefined}
+            >
+              {status} ({counts[status]})
+            </Link>
+          ))}
+        </div>
         <div className="stat-row" aria-label="カリキュラム情報">
           <div>
             <span>コマ数</span>
-            <strong>{lessons.length}</strong>
+            <strong>{filtered.length}</strong>
           </div>
           <div>
             <span>総時間</span>
-            <strong>{lessons.reduce((acc, lesson) => acc + Number(lesson.duration_min ?? 0), 0)}分</strong>
+            <strong>
+              {filtered.reduce((acc, lesson) => acc + Number(lesson.duration_min ?? 0), 0)}分
+            </strong>
           </div>
           <div>
             <span>対象</span>
@@ -40,10 +75,11 @@ export default function CurriculumPage() {
       </div>
 
       <div className="grid">
-        {lessons.map((lesson) => (
+        {filtered.map((lesson) => (
           <DocCard key={lesson.slug} doc={lesson} href={`/curriculum/${lesson.slug}`} />
         ))}
       </div>
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 
 export default function HomePage() {
   const links = [
@@ -23,6 +23,13 @@ export default function HomePage() {
     { no: "L6", title: "発表へまとめる", desc: "問い・方法・倫理・限界を1枚に整理" },
   ];
 
+  const aiWorkflowLinks = [
+    { href: "/library?status=inbox", label: "収集Inbox", desc: "AI収集した文献メモの未整理分" },
+    { href: "/library?status=reviewed", label: "レビュー済み", desc: "人間確認を終えた文献メモ" },
+    { href: "/library?status=published", label: "公開候補", desc: "授業導線に載せやすい整理済み文献" },
+    { href: "/search", label: "横断検索", desc: "statusと種別で全体を確認" },
+  ];
+
   return (
     <>
       <section className="card home-hero reveal">
@@ -32,6 +39,26 @@ export default function HomePage() {
           観察から発表までを、短い教材・ワーク・図解でつなぐ授業ハブです。
           各ページは「そのまま配布」「そのまま説明」しやすい粒度で整理しています。
         </p>
+      </section>
+
+      <section className="card reveal">
+        <div className="timeline-head">
+          <div>
+            <p className="section-kicker">AI Workflow</p>
+            <h2>AI収集・編集の作業導線</h2>
+          </div>
+          <Link href="/library?status=inbox">Inboxを開く</Link>
+        </div>
+        <div className="grid two" aria-label="AI作業ショートカット">
+          {aiWorkflowLinks.map((item) => (
+            <article key={item.href} className="card">
+              <h3>
+                <Link href={item.href}>{item.label}</Link>
+              </h3>
+              <p>{item.desc}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="card reveal">
@@ -66,3 +93,4 @@ export default function HomePage() {
     </>
   );
 }
+

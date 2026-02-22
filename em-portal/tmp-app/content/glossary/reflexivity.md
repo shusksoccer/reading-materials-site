@@ -1,21 +1,17 @@
 ﻿---
-title: "用語: reflexivity"
-term: "reflexivity"
 slug: "reflexivity"
-aliases: []
-related: ["observation","description"]
-examples: ["学校","SNS"]
-tags: ["用語","基礎"]
-sources: ["src-em-intro","src-ca-basics"]
+title: "Reflexivity（反射性）"
+tags: ["基礎","用語","分析"]
+sources: ["britannica-em","wiley-sem"]
+status: "reviewed"
 ---
-## 定義(短い)
-- reflexivity は、場面の秩序を読むための基本概念です。
+
+# Reflexivity（反射性）
+
+EMでの reflexivity は、行為が状況を作りながら、同時にその状況の意味づけにも使われることを指します。
 
 ## 例
-- 学校: ホームルーム前のやり取り。
-- SNS: 返信タイミングや言い回し。
+- 授業で先生が「では始めます」と言う行為は、授業開始を説明するだけでなく、実際に開始を成立させる。
 
-## 使い方
-- まず定義を読む。
-- 次に観察ログで該当箇所を1つ示す。
-
+## 授業での観点
+- 行為が「状況の結果」でもあり「状況を作る手段」でもある点を見る。

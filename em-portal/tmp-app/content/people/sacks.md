@@ -1,14 +1,18 @@
 ﻿---
-title: "ハーヴィー・サックス"
 slug: "sacks"
-tags: ["研究者","会話分析"]
-sources: ["src-ca-basics"]
+title: "Harvey Sacks"
+tags: ["人物","会話分析","基礎"]
+sources: ["isca-turntaking-1974","wikipedia-sacks"]
+status: "published"
 ---
-## 何をしたか
-- 会話データを順序として読む方法(会話分析)を発展させた。
 
-## 授業で使うポイント
-- ターン番号を振って、どこで意味が作られるかを見る。
+# Harvey Sacks
+
+会話分析（Conversation Analysis）の基礎を築いた研究者の一人です。
+
+## 授業で使う観点
+- 日常会話を分析対象として扱う。
+- 発話内容だけでなく、順序・タイミング・応答関係に注目する。
 
 ## 覚える一言
-- 会話の意味は、順番で決まる。
+- 「会話の細部から、社会的秩序の作られ方を読む」

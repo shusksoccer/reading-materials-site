@@ -1,5 +1,6 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { ContentDoc } from "@/lib/content";
+import { getStatusValue } from "@/lib/status-filter";
 
 type Props = {
   doc: ContentDoc;
@@ -15,6 +16,7 @@ export function DocCard({ doc, href }: Props) {
       {"lesson_no" in doc && doc.lesson_no ? (
         <p className="meta">授業{String(doc.lesson_no)}コマ目</p>
       ) : null}
+      <p className="meta">status: {getStatusValue(doc.status)}</p>
       {doc.tags.length ? (
         <div className="tags" aria-label="タグ">
           {doc.tags.map((tag) => (
@@ -27,3 +29,4 @@ export function DocCard({ doc, href }: Props) {
     </article>
   );
 }
+

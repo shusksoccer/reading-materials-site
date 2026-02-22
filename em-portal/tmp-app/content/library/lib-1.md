@@ -1,19 +1,20 @@
 ﻿---
-title: "入門解説ノート"
 slug: "lib-1"
-author: "Portal Editorial"
-year: 2026
-url: "https://example.com/library/intro"
-difficulty: "易"
-use_case: "授業導入"
-tags: ["文献","基礎"]
-sources: ["src-em-intro"]
+title: "Garfinkel (1967) Studies in Ethnomethodology"
+tags: ["基礎","文献","理論"]
+sources: ["wiley-sem","britannica-em"]
+status: "published"
+author: "Harold Garfinkel"
+year: 1967
+difficulty: "中"
+use_case: "EMの出発点を確認"
+url: "https://www.wiley-vch.de/en/areas-interest/humanities-social-sciences/studies-in-ethnomethodology-978-0-7456-0005-5"
 ---
-## 何が得られるか
-- EMの全体像を5分で説明できる。
 
-## 授業での使い方
-- L1導入で配布し、授業の5段階(観察→記述→分析→検討→発表)を確認する。
+# Garfinkel (1967) Studies in Ethnomethodology
 
-## 読むポイント
-- 用語の定義より、授業での手順に注目する。
+## 読む前のポイント
+- EMの基本発想（日常的実践への注目）を押さえるための土台文献。
+
+## 授業向けメモ
+- 全部を読むより、EMが何を問題にするかを理解するための参照として使う。

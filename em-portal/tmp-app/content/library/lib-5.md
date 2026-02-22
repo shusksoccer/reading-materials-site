@@ -1,19 +1,20 @@
 ﻿---
-title: "発表設計テンプレ"
 slug: "lib-5"
-author: "Portal Editorial"
+title: "TalkResearch transcription resources"
+tags: ["転写","方法","会話分析"]
+sources: ["talkresearch-transcription","talkbank-jefferson-nb","oac-jefferson-papers"]
+status: "inbox"
+author: "TalkResearch / TalkBank"
 year: 2026
-url: "https://example.com/library/presentation"
 difficulty: "易"
-use_case: "発表準備"
-tags: ["文献","発表"]
-sources: ["src-presentation"]
+use_case: "転写記号と記録方法の導入"
+url: "https://www.talkresearch.org/transcription-resources"
 ---
-## 何が得られるか
-- 3分発表を1枚で構成する型が手に入る。
 
-## 授業での使い方
-- L6で、問い/方法/根拠/倫理/限界を埋めるワークに使う。
+# TalkResearch transcription resources
 
-## 読むポイント
-- 結論より先に、問いの限定と根拠提示を確認する。
+## 読む前のポイント
+- Jefferson式転写や関連リソースへの入口として使う。
+
+## 授業向けメモ
+- 実際の転写課題を作る前に、どの記号を採用するか決める材料になる。

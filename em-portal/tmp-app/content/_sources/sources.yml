@@ -1,67 +1,170 @@
 ﻿[
-    {
-        "id":  "src-em-intro",
-        "year":  2026,
-        "reliability":  "中",
-        "title":  "Ethnomethodology Intro Notes",
-        "url":  "https://example.com/em-intro",
-        "type":  "article",
-        "author":  "Portal Editorial",
-        "key_points":  [
-                           "EMは日常実践の秩序を扱う",
-                           "説明責任性が鍵"
-                       ]
-    },
-    {
-        "id":  "src-ca-basics",
-        "year":  2026,
-        "reliability":  "中",
-        "title":  "Conversation Analysis Basics",
-        "url":  "https://example.com/ca-basics",
-        "type":  "article",
-        "author":  "Portal Editorial",
-        "key_points":  [
-                           "順番取りと修復",
-                           "録音記録の分析"
-                       ]
-    },
-    {
-        "id":  "src-class-ethics",
-        "year":  2026,
-        "reliability":  "高",
-        "title":  "Classroom Research Ethics",
-        "url":  "https://example.com/class-ethics",
-        "type":  "guide",
-        "author":  "Portal Editorial",
-        "key_points":  [
-                           "同意と匿名化",
-                           "危害回避"
-                       ]
-    },
-    {
-        "id":  "src-breaching-safe",
-        "year":  2026,
-        "reliability":  "高",
-        "title":  "Safe Breaching Protocol",
-        "url":  "https://example.com/breaching-safe",
-        "type":  "guide",
-        "author":  "Portal Editorial",
-        "key_points":  [
-                           "模擬データで実施",
-                           "実生活で他者を困らせない"
-                       ]
-    },
-    {
-        "id":  "src-presentation",
-        "year":  2026,
-        "reliability":  "中",
-        "title":  "Research Presentation Template",
-        "url":  "https://example.com/presentation",
-        "type":  "template",
-        "author":  "Portal Editorial",
-        "key_points":  [
-                           "問い方法結果",
-                           "再現可能性の説明"
-                       ]
-    }
+  {
+    "id": "britannica-em",
+    "title": "Ethnomethodology | sociology | Britannica",
+    "author": "Encyclopaedia Britannica",
+    "year": 2026,
+    "url": "https://www.britannica.com/topic/ethnomethodology",
+    "type": "overview",
+    "key_points": [
+      "Garfinkel coined ethnomethodology",
+      "Focus on methods people use in everyday life to construct social reality",
+      "Linked to conversational analysis and interpretive approaches"
+    ],
+    "reliability": "高"
+  },
+  {
+    "id": "wiley-sem",
+    "title": "Studies in Ethnomethodology (Wiley-VCH edition page)",
+    "author": "Wiley-VCH / John Wiley & Sons",
+    "year": 1984,
+    "url": "https://www.wiley-vch.de/en/areas-interest/humanities-social-sciences/studies-in-ethnomethodology-978-0-7456-0005-5",
+    "type": "book-page",
+    "key_points": [
+      "Classic Garfinkel work",
+      "Lists major chapters including What is Ethnomethodology",
+      "Useful as canonical bibliography reference"
+    ],
+    "reliability": "高"
+  },
+  {
+    "id": "isca-turntaking-1974",
+    "title": "Simplest Systematics for Turn-Taking (Language, 1974) – ISCA",
+    "author": "International Society for Conversation Analysis (ISCA)",
+    "year": 1974,
+    "url": "https://www.conversationanalysis.org/schegloff-media-archive/simplest-systematics-for-turn-taking-language-1974/",
+    "type": "archive",
+    "key_points": [
+      "Sacks, Schegloff, Jefferson turn-taking paper reference",
+      "Describes turn-taking as locally managed and interactionally controlled",
+      "Provides clip-based archive for study"
+    ],
+    "reliability": "高"
+  },
+  {
+    "id": "isca-overlap-2000",
+    "title": "Overlapping Talk and the Organization of Turntaking (2000) – ISCA",
+    "author": "International Society for Conversation Analysis (ISCA)",
+    "year": 2000,
+    "url": "https://www.conversationanalysis.org/schegloff-media-archive/overlapping-talk-and-the-organization-of-turntaking-for-conversation-2000/",
+    "type": "archive",
+    "key_points": [
+      "Schegloff on overlap organization",
+      "Clarifies overlap as organized phenomenon rather than noise",
+      "Builds on 1974 turn-taking account"
+    ],
+    "reliability": "高"
+  },
+  {
+    "id": "ucla-clic-faculty",
+    "title": "CLIC Faculty (UCLA Center for Language, Interaction, and Culture)",
+    "author": "UCLA CLIC",
+    "year": 2026,
+    "url": "https://clic.ss.ucla.edu/faculty/",
+    "type": "institution",
+    "key_points": [
+      "Includes Emanuel Schegloff memorial listing",
+      "Positions interaction as key research site",
+      "Useful institutional context for CA/interaction studies"
+    ],
+    "reliability": "高"
+  },
+  {
+    "id": "talkresearch-transcription",
+    "title": "Transcription resources for conversation analysis",
+    "author": "TalkResearch.org",
+    "year": 2026,
+    "url": "https://www.talkresearch.org/transcription-resources",
+    "type": "methods-resource",
+    "key_points": [
+      "Introduces CA conventions and Jefferson developments",
+      "Links to Schegloff tutorial and EMCA wiki",
+      "Useful practical guide for learners"
+    ],
+    "reliability": "中"
+  },
+  {
+    "id": "talkbank-jefferson-nb",
+    "title": "CABank English Jefferson NB Corpus (TalkBank)",
+    "author": "TalkBank / CABank",
+    "year": 2026,
+    "url": "https://talkbank.org/ca/access/Jefferson/NB.html",
+    "type": "corpus",
+    "key_points": [
+      "Jefferson transcripts corpus page",
+      "Shows archival and citation practices for CA data",
+      "Includes anonymization notes"
+    ],
+    "reliability": "高"
+  },
+  {
+    "id": "oac-jefferson-papers",
+    "title": "Gail Jefferson papers, circa 1960s-2008 (OAC)",
+    "author": "Online Archive of California / UCLA Library Special Collections",
+    "year": 2017,
+    "url": "https://oac.cdlib.org/findaid/ark%3A%2F13030%2Fc8qc08kr",
+    "type": "archive",
+    "key_points": [
+      "Biographical and archival summary of Gail Jefferson",
+      "Describes contribution to CA transcription standards",
+      "Useful for person page and history notes"
+    ],
+    "reliability": "高"
+  },
+  {
+    "id": "wikipedia-garfinkel",
+    "title": "Harold Garfinkel - Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "url": "https://en.wikipedia.org/wiki/Harold_Garfinkel",
+    "type": "overview",
+    "key_points": [
+      "Quick biographical overview",
+      "Lists major influences and publications",
+      "Use only as supplementary orientation"
+    ],
+    "reliability": "低"
+  },
+  {
+    "id": "wikipedia-sacks",
+    "title": "Harvey Sacks - Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "url": "https://en.wikipedia.org/wiki/Harvey_Sacks",
+    "type": "overview",
+    "key_points": [
+      "Quick biographical overview of Sacks",
+      "Conversation analysis founder context",
+      "Use only as supplementary orientation"
+    ],
+    "reliability": "低"
+  },
+  {
+    "id": "wikipedia-schegloff",
+    "title": "Emanuel Schegloff - Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "url": "https://en.wikipedia.org/wiki/Emanuel_Schegloff",
+    "type": "overview",
+    "key_points": [
+      "Quick biographical overview of Schegloff",
+      "Co-founder of conversation analysis context",
+      "Use only as supplementary orientation"
+    ],
+    "reliability": "低"
+  },
+  {
+    "id": "wikipedia-jefferson",
+    "title": "Gail Jefferson - Wikipedia",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "url": "https://en.wikipedia.org/wiki/Gail_Jefferson",
+    "type": "overview",
+    "key_points": [
+      "Quick overview of Jefferson and transcription conventions",
+      "Lists key publications and collaborations",
+      "Use only as supplementary orientation"
+    ],
+    "reliability": "低"
+  }
 ]

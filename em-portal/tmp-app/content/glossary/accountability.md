@@ -1,21 +1,20 @@
 ﻿---
-title: "用語: accountability"
-term: "accountability"
 slug: "accountability"
-aliases: []
-related: ["observation","description"]
-examples: ["学校","SNS"]
-tags: ["用語","基礎"]
-sources: ["src-em-intro","src-ca-basics"]
+title: "Accountability（可説明可能性）"
+tags: ["基礎","用語","観察"]
+sources: ["britannica-em","wiley-sem"]
+status: "published"
 ---
-## 定義(短い)
-- accountability は、場面の秩序を読むための基本概念です。
+
+# Accountability（可説明可能性）
+
+EMでいう accountability は、行為が他者にとって理解可能・説明可能な形で行われていることを指します。
+
+## 授業向けの言い換え
+- 人は、ただ行動するだけでなく、"何をしているか分かる形" で行動している。
 
 ## 例
-- 学校: ホームルーム前のやり取り。
-- SNS: 返信タイミングや言い回し。
+- レジで列に並ぶとき、順番を守る行為は無言でも他者に読める。
 
-## 使い方
-- まず定義を読む。
-- 次に観察ログで該当箇所を1つ示す。
-
+## 注意
+- 「責任感」だけの意味に限定しない。

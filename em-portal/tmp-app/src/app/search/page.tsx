@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import searchIndex from "../../../public/search-index.json";
+import { STATUS_OPTIONS, getStatusValue } from "@/lib/status-filter";
 
 type SearchRow = {
+  status?: string;
   kind: string;
   slug: string;
   title: string;
@@ -41,21 +43,33 @@ function buildHref(item: SearchRow) {
 export default function SearchPage() {
   const [query, setQuery] = useState("");
   const [kindFilter, setKindFilter] = useState<string>("all");
+  const [statusFilter, setStatusFilter] = useState<string>("all");
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     const rows = searchIndex as SearchRow[];
     return rows
       .filter((row) => (kindFilter === "all" ? true : row.kind === kindFilter))
+      .filter((row) => (statusFilter === "all" ? true : getStatusValue(row.status) === statusFilter))
       .filter((row) => {
         if (!q) return true;
-        const hay = `${row.title} ${row.tags.join(" ")} ${row.text}`.toLowerCase();
+        const hay = `${row.title} ${getStatusValue(row.status)} ${row.tags.join(" ")} ${row.text}`.toLowerCase();
         return hay.includes(q);
       })
       .slice(0, 40);
-  }, [query, kindFilter]);
+  }, [query, kindFilter, statusFilter]);
 
   const kinds = ["all", ...Object.keys(labelMap)];
+  const statusCounts = useMemo(() => {
+    const rows = searchIndex as SearchRow[];
+    return {
+      all: rows.length,
+      inbox: rows.filter((row) => getStatusValue(row.status) === "inbox").length,
+      reviewed: rows.filter((row) => getStatusValue(row.status) === "reviewed").length,
+      published: rows.filter((row) => getStatusValue(row.status) === "published").length,
+      unknown: rows.filter((row) => getStatusValue(row.status) === "unknown").length,
+    } as const;
+  }, []);
 
   return (
     <section>
@@ -83,6 +97,18 @@ export default function SearchPage() {
             </button>
           ))}
         </div>
+        <div className="chip-row" aria-label="statusフィルタ">
+          {STATUS_OPTIONS.map((status) => (
+            <button
+              key={status}
+              type="button"
+              className={statusFilter === status ? "chip-button active" : "chip-button"}
+              onClick={() => setStatusFilter(status)}
+            >
+              {status} ({statusCounts[status]})
+            </button>
+          ))}
+        </div>
       </div>
 
       <p className="meta" style={{ marginTop: "0.5rem" }}>
@@ -96,6 +122,7 @@ export default function SearchPage() {
               <div className="search-head-top">
                 <span className={`search-kind kind-${item.kind}`}>{labelMap[item.kind] ?? item.kind}</span>
                 <span className="meta search-slug">{item.slug}</span>
+                <span className="meta search-slug">status: {getStatusValue(item.status)}</span>
               </div>
               <h2>
                 <Link href={buildHref(item)}>{item.title}</Link>
