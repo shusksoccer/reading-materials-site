@@ -40,6 +40,109 @@ function LessonLinkGroup({
   );
 }
 
+function getLessonToolkit(slug: string): {
+  figures: LessonLinkItem[];
+  glossary: LessonLinkItem[];
+  worksheets: LessonLinkItem[];
+  faqs: LessonLinkItem[];
+} | null {
+  switch (slug) {
+    case "l1-what-is-em":
+      return {
+        figures: [
+          { href: "/figures/fig-learning-route", label: "学習ルート", note: "単元全体の流れを最初に共有" },
+          { href: "/figures/fig-observe-describe-analyze", label: "観察・記述・分析", note: "役割の違いを説明" },
+          { href: "/figures/fig-background-expectancy", label: "背景的期待", note: "EMの見方を導入" },
+        ],
+        glossary: [
+          { href: "/glossary/accountability", label: "可説明可能性" },
+          { href: "/glossary/indexicality", label: "文脈依存性" },
+          { href: "/glossary/reflexivity", label: "反射性" },
+          { href: "/glossary/context", label: "文脈" },
+        ],
+        worksheets: [
+          { href: "/worksheets/ws-l1", label: "WS1 観察ログ", note: "授業内ミニ活動の提出用" },
+        ],
+        faqs: [
+          { href: "/faq", label: "FAQ一覧", note: "心理学との違い / AI公開 / データ量などを確認" },
+        ],
+      };
+    case "l2-how-to-observe":
+      return {
+        figures: [
+          { href: "/figures/fig-observation-log", label: "観察ログの書き方" },
+          { href: "/figures/fig-ethics-checklist", label: "倫理チェック" },
+        ],
+        glossary: [
+          { href: "/glossary/observation", label: "観察" },
+          { href: "/glossary/fieldnote", label: "フィールドノート" },
+          { href: "/glossary/anonymization", label: "匿名化" },
+        ],
+        worksheets: [{ href: "/worksheets/ws-l2", label: "WS2 観察チェックシート" }],
+        faqs: [{ href: "/faq", label: "FAQ一覧", note: "データ量・テーマ設定も確認可" }],
+      };
+    case "l3-how-to-describe":
+      return {
+        figures: [
+          { href: "/figures/fig-observe-describe-analyze", label: "観察・記述・分析" },
+          { href: "/figures/fig-transcript-template", label: "転写テンプレート" },
+        ],
+        glossary: [
+          { href: "/glossary/description", label: "記述" },
+          { href: "/glossary/transcript", label: "転写" },
+          { href: "/glossary/data-session", label: "データセッション" },
+        ],
+        worksheets: [{ href: "/worksheets/ws-l3", label: "WS3 記述テンプレート" }],
+        faqs: [{ href: "/faq", label: "FAQ一覧", note: "記述と分析の混同を確認" }],
+      };
+    case "l4-ca-entry":
+      return {
+        figures: [
+          { href: "/figures/fig-turn-structure", label: "順番取りの基本構造" },
+          { href: "/figures/fig-repair-pattern", label: "修復パターン" },
+        ],
+        glossary: [
+          { href: "/glossary/turn-taking", label: "順番取り" },
+          { href: "/glossary/repair", label: "修復" },
+          { href: "/glossary/adjacency-pair", label: "隣接ペア" },
+        ],
+        worksheets: [{ href: "/worksheets/ws-l4", label: "WS4 ターン分けと修復" }],
+        faqs: [{ href: "/faq", label: "FAQ一覧", note: "会話分析で何を数えるか等" }],
+      };
+    case "l5-breaching":
+      return {
+        figures: [
+          { href: "/figures/fig-breaching-safe", label: "安全なブリーチング学習" },
+          { href: "/figures/fig-background-expectancy", label: "背景的期待" },
+          { href: "/figures/fig-ethics-checklist", label: "倫理チェック" },
+        ],
+        glossary: [
+          { href: "/glossary/breaching", label: "ブリーチング" },
+          { href: "/glossary/background-expectancies", label: "背景的期待" },
+          { href: "/glossary/ethics", label: "倫理" },
+        ],
+        worksheets: [{ href: "/worksheets/ws-l5", label: "WS5 模擬ブリーチング分析" }],
+        faqs: [{ href: "/faq", label: "FAQ一覧", note: "ブリーチングの安全運用を確認" }],
+      };
+    case "l6-project":
+      return {
+        figures: [
+          { href: "/figures/fig-presentation-map", label: "発表構成マップ" },
+          { href: "/figures/fig-learning-route", label: "学習ルート" },
+        ],
+        glossary: [
+          { href: "/glossary/presentation", label: "発表" },
+          { href: "/glossary/validity", label: "妥当性" },
+          { href: "/glossary/anonymization", label: "匿名化" },
+        ],
+        worksheets: [{ href: "/worksheets/ws-l6", label: "WS6 発表計画シート" }],
+        faqs: [{ href: "/faq", label: "FAQ一覧", note: "テーマの絞り込み・発表評価を確認" }],
+      };
+    default:
+      return null;
+  }
+}
+
 export function generateStaticParams() {
   return getCollection("lessons").map((lesson) => ({ slug: lesson.slug }));
 }
@@ -53,27 +156,7 @@ export default async function LessonDetailPage({
   const lesson = getDocBySlug("lessons", slug);
   if (!lesson) notFound();
 
-  const lessonToolkit = lesson.slug === "l1-what-is-em"
-    ? {
-      figures: [
-        { href: "/figures/fig-learning-route", label: "学習ルート", note: "単元全体の流れを最初に共有" },
-        { href: "/figures/fig-observe-describe-analyze", label: "観察・記述・分析", note: "役割の違いを説明" },
-        { href: "/figures/fig-background-expectancy", label: "背景的期待", note: "EMの見方を導入" },
-      ] satisfies LessonLinkItem[],
-      glossary: [
-        { href: "/glossary/accountability", label: "可説明可能性" },
-        { href: "/glossary/indexicality", label: "文脈依存性" },
-        { href: "/glossary/reflexivity", label: "反射性" },
-        { href: "/glossary/context", label: "文脈" },
-      ] satisfies LessonLinkItem[],
-      worksheets: [
-        { href: "/worksheets/ws-l1", label: "WS1 観察ログ", note: "授業内ミニ活動の提出用" },
-      ] satisfies LessonLinkItem[],
-      faqs: [
-        { href: "/faq", label: "FAQ一覧", note: "心理学との違い / AI公開 / データ量などを確認" },
-      ] satisfies LessonLinkItem[],
-    }
-    : null;
+  const lessonToolkit = getLessonToolkit(lesson.slug);
 
   return (
     <article>

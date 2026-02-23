@@ -32,3 +32,4 @@
 - Improved `/people` list cards for classroom scanning: surface `覚える一言` first and move full memo/source blocks into collapsible sections.
 - Rebuilt `/intro` as a practical entry page with quick-start steps, starter links (L1/figures/glossary/worksheet/FAQ), and an inline preview of the first lesson.
 - Rewrote `ws-l1` to `ws-l6` from generic templates into lesson-specific worksheets aligned with L1-L6 objectives (observation, checking, data description, CA entry, safe breaching analysis, presentation planning).
+- Expanded curriculum lesson toolkit links from L1-only to all lessons L1-L6, so each lesson page has direct links to relevant figures/glossary/worksheet/FAQ.
