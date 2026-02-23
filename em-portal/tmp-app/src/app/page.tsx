@@ -2,42 +2,42 @@ import Link from "next/link";
 
 export default function HomePage() {
   const links = [
-    { href: "/intro", label: "入門", desc: "EMの基本的な見方を短くつかむ" },
-    { href: "/curriculum", label: "カリキュラム", desc: "授業構成と各コマの詳細" },
-    { href: "/worksheets", label: "ワーク集", desc: "配布しやすい実践用シート" },
-    { href: "/glossary", label: "用語集", desc: "基本概念をすばやく確認" },
-    { href: "/figures", label: "図解", desc: "授業説明に使える図解素材" },
-    { href: "/library", label: "文献", desc: "授業づくりの参照文献メモ" },
-    { href: "/people", label: "研究者", desc: "主要研究者の要点紹介" },
-    { href: "/faq", label: "FAQ", desc: "よくある疑問への短い回答" },
-    { href: "/search", label: "検索", desc: "教材全体を横断検索" },
-    { href: "/tags", label: "タグ", desc: "観察・記述・分析の観点で辿る" },
+    { href: "/intro", label: "入門", desc: "最初に読むページ。授業で使う導線の入口です。" },
+    { href: "/curriculum", label: "カリキュラム", desc: "L1〜L6 の授業構成と各回の導線。" },
+    { href: "/worksheets", label: "ワーク集", desc: "授業回ごとの提出用ワークシート。" },
+    { href: "/glossary", label: "用語集", desc: "授業で使う概念を短く確認。" },
+    { href: "/figures", label: "図解", desc: "授業説明に使える図解と解説。" },
+    { href: "/library", label: "文献", desc: "授業向けに整理した文献メモ。" },
+    { href: "/people", label: "研究者", desc: "人物ごとの覚える一言と授業で使う観点。" },
+    { href: "/faq", label: "FAQ", desc: "授業で止まりやすい点の短答集。" },
+    { href: "/search", label: "検索", desc: "用語・図解・文献・ワークを横断検索。" },
+    { href: "/tags", label: "タグ", desc: "観点別に教材を探す。" },
   ];
 
   const timeline = [
-    { no: "L1", title: "EMの見方をつかむ", desc: "日常の秩序をどう観察するかを知る" },
-    { no: "L2", title: "観察する", desc: "印象ではなく再確認できる記録を作る" },
-    { no: "L3", title: "記述する", desc: "時刻・発話・行為を分けて整理する" },
-    { no: "L4", title: "会話を読む", desc: "順番取りと修復を短い会話データで見る" },
-    { no: "L5", title: "背景的期待を考える", desc: "安全な例で当たり前の前提を分析する" },
-    { no: "L6", title: "発表へまとめる", desc: "問い・方法・倫理・限界を整理する" },
+    { no: "L1", title: "EMとは何か", desc: "EMの見方をつかみ、観察の入口をつくる。" },
+    { no: "L2", title: "観察のしかた", desc: "観察ログの型と倫理チェックを学ぶ。" },
+    { no: "L3", title: "記述とデータ化", desc: "観察ログを分析できる記述に整える。" },
+    { no: "L4", title: "会話分析の入口", desc: "順番取り・修復を短いデータで読む。" },
+    { no: "L5", title: "背景期待とブリーチング", desc: "安全な模擬データで期待の破れを分析する。" },
+    { no: "L6", title: "発表計画", desc: "問い・方法・根拠・倫理・限界をまとめる。" },
   ];
 
   const aiWorkflowLinks = [
-    { href: "/library?status=inbox", label: "収集済み（未整理）", desc: "AI収集した文献メモの整理前一覧" },
-    { href: "/library?status=reviewed", label: "レビュー済み", desc: "人間確認を終えた文献メモ" },
-    { href: "/library?status=published", label: "公開用", desc: "授業に載せやすい整理済み文献" },
-    { href: "/search", label: "横断検索", desc: "種別・状態で全体を確認" },
+    { href: "/library?status=inbox", label: "収集中（inbox）", desc: "AIで収集した文献メモの確認入口。" },
+    { href: "/library?status=reviewed", label: "レビュー済み", desc: "人間レビューを終えた文献メモ。" },
+    { href: "/library?status=published", label: "公開用", desc: "授業で使う前提の文献メモ。" },
+    { href: "/search", label: "横断検索", desc: "用語・図解・ワーク・文献をまとめて検索。" },
   ];
 
   return (
     <>
       <section className="card home-hero reveal">
-        <span className="home-kicker">高校探究授業向け</span>
-        <h1>エスノメソドロジー探究授業ポータル</h1>
+        <span className="home-kicker">授業で使える EM ポータル</span>
+        <h1>エスノメソドロジー授業用ポータル</h1>
         <p>
-          観察から発表までを、短い教材・ワーク・図解でつなぐ授業ハブです。
-          AIで収集した情報を人間がレビューし、日本語教材として整理していく運用を前提にしています。
+          観察・記述・分析・発表までを、用語、図解、ワーク、FAQで支える授業向けサイトです。
+          AIで収集した情報をレビューして整理し、日本語で授業に使える形にまとめています。
         </p>
       </section>
 
@@ -45,11 +45,11 @@ export default function HomePage() {
         <div className="timeline-head">
           <div>
             <p className="section-kicker">AI運用</p>
-            <h2>AI収集・編集の作業導線</h2>
+            <h2>AI収集・整理の作業導線</h2>
           </div>
-          <Link href="/library?status=inbox">収集済み（未整理）を見る</Link>
+          <Link href="/library?status=inbox">収集中の文献を見る</Link>
         </div>
-        <div className="grid two" aria-label="AI作業ショートカット">
+        <div className="grid two" aria-label="AI運用ショートカット">
           {aiWorkflowLinks.map((item) => (
             <article key={item.href} className="card">
               <h3>
@@ -65,9 +65,9 @@ export default function HomePage() {
         <div className="timeline-head">
           <div>
             <p className="section-kicker">授業の流れ</p>
-            <h2>6コマの進め方</h2>
+            <h2>6コマの進行</h2>
           </div>
-          <Link href="/curriculum">詳細を見る</Link>
+          <Link href="/curriculum">授業一覧を見る</Link>
         </div>
         <div className="lesson-timeline" aria-label="授業タイムライン">
           {timeline.map((step) => (
@@ -93,4 +93,3 @@ export default function HomePage() {
     </>
   );
 }
-
