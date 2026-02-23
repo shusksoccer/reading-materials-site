@@ -23,3 +23,4 @@
 - Simplified `library` list cards with a Japanese "文献概要" block and collapsible memo area; also fixed mojibake/metadata text in `content/library/lib-1.md`.
 - Improved `glossary` readability: quick links now show Japanese term titles, detail pages include a Japanese summary block, and `accountability` text was de-mojibaked/refined.
 - Fixed mojibake glossary entries `adjacency-pair` and `anonymization` with clean Japanese definitions/examples for classroom use.
+- Cleaned residual UTF-8 BOM markers from `content/faq/faq-1.md` and `content/lessons/l1-what-is-em.md` (content unchanged, formatting hygiene).

@@ -1,4 +1,4 @@
-﻿---
+---
 slug: "l1-what-is-em"
 title: "EMとは何か：日常の秩序を観察する"
 lesson_no: 1
