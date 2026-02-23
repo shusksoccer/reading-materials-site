@@ -4,6 +4,15 @@ import { SourceLinks } from "@/components/source-links";
 import { getCollection } from "@/lib/content";
 import { STATUS_OPTIONS, getStatusLabel, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
+function getMemorableLine(body: string): string {
+  const normalized = body.replace(/\r\n/g, "\n");
+  const match = normalized.match(/##\s*覚える一言\s*\n-\s+(.+)/);
+  if (match?.[1]) return match[1].trim();
+  const firstBullet = normalized.match(/^\s*-\s+(.+)$/m);
+  if (firstBullet?.[1]) return firstBullet[1].trim();
+  return "";
+}
+
 export default async function PeoplePage({
   searchParams,
 }: {
@@ -47,8 +56,16 @@ export default async function PeoplePage({
           <article key={doc.slug} className="card profile-card">
             <h2>{doc.title}</h2>
             <p className="meta">状態: {getStatusLabel(getStatusValue(doc.status))}</p>
-            <MarkdownBody body={doc.body} />
-            <SourceLinks sourceIds={doc.sources} />
+            {getMemorableLine(doc.body) ? (
+              <p style={{ fontWeight: 600 }}>{getMemorableLine(doc.body)}</p>
+            ) : null}
+            <details>
+              <summary style={{ cursor: "pointer", fontWeight: 600 }}>人物メモを開く</summary>
+              <div style={{ marginTop: "0.75rem" }}>
+                <MarkdownBody body={doc.body} />
+                <SourceLinks sourceIds={doc.sources} />
+              </div>
+            </details>
           </article>
         ))}
       </div>
