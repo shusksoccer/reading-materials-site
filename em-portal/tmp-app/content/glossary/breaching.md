@@ -1,12 +1,12 @@
 ﻿---
 slug: "breaching"
-title: "Breaching（ブリーチング）"
+title: "ブリーチング（Breaching）"
 tags: ["基礎","用語","倫理"]
 sources: ["wiley-sem","wikipedia-garfinkel"]
 status: "reviewed"
 ---
 
-# Breaching（ブリーチング）
+# ブリーチング（Breaching）
 
 日常の「当たり前」をあえて崩し、その反応から背景的な期待（background expectancies）を可視化する発想です。
 
@@ -16,3 +16,4 @@ status: "reviewed"
 
 ## 注意
 - 面白さ優先ではなく、倫理と安全を先に確認する。
+

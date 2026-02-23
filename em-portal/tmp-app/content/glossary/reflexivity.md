@@ -1,12 +1,12 @@
 ﻿---
 slug: "reflexivity"
-title: "Reflexivity（反射性）"
+title: "反射性（Reflexivity）"
 tags: ["基礎","用語","分析"]
 sources: ["britannica-em","wiley-sem"]
 status: "reviewed"
 ---
 
-# Reflexivity（反射性）
+# 反射性（Reflexivity）
 
 EMでの reflexivity は、行為が状況を作りながら、同時にその状況の意味づけにも使われることを指します。
 
@@ -15,3 +15,4 @@ EMでの reflexivity は、行為が状況を作りながら、同時にその�
 
 ## 授業での観点
 - 行為が「状況の結果」でもあり「状況を作る手段」でもある点を見る。
+

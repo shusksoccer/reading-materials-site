@@ -1,15 +1,16 @@
 ﻿---
 slug: "consent"
-title: "Consent（同意）"
+title: "同意（Consent）"
 tags: ["倫理","用語","観察"]
 sources: "britannica-em"
 status: "published"
 ---
 
-# Consent（同意）
+# 同意（Consent）
 
 観察や記録、共有の目的・範囲を説明し、本人が理解したうえで了承することです。学校現場では保護者・学校のルール確認も必要です。
 
 ## 授業での見方
 - 単語の定義だけでなく、どの場面で使うかを確認する
 - 観察・記述・分析のどこで使う概念かを意識する
+

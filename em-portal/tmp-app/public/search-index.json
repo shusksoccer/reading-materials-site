@@ -13,7 +13,7 @@
     "slug": "accountability",
     "title": "accountability.md",
     "tags": [],
-    "text": "--- slug: \"accountability\" title: \"Accountability（可説明可能性）\" tags: [\"基礎\",\"用語\",\"観察\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"published\" --- # Accountability（可説明可能性） EMでいう accountability は、行為が他者にとって理解可能・説明可能な形で行われていることを指します。 ## 授業向けの言い換え - 人は、ただ行動するだけでなく、\"何をしているか分かる形\" で行動している。 ## 例 - レジで列に並ぶとき、順番を守る行為は無言でも他者に読める。 ## 注意 - 「責任感」だけの意味に限定しない。"
+    "text": "--- slug: \"accountability\" title: \"可説明可能性（Accountability）\" tags: [\"基礎\",\"用語\",\"観察\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"published\" --- # 可説明可能性（Accountability） EMでいう accountability は、行為が他者にとって理解可能・説明可能な形で行われていることを指します。 ## 授業向けの言い換え - 人は、ただ行動するだけでなく、\"何をしているか分かる形\" で行動している。 ## 例 - レジで列に並ぶとき、順番を守る行為は無言でも他者に読める。 ## 注意 - 「責任感」だけの意味に限定しない。"
   },
   {
     "status": "unknown",
@@ -21,7 +21,7 @@
     "slug": "adjacency-pair",
     "title": "adjacency-pair.md",
     "tags": [],
-    "text": "--- slug: \"adjacency-pair\" title: \"Adjacency pair（隣接ペア）\" tags: [\"会話分析\",\"用語\",\"順序\"] sources: \"isca-turntaking-1974\" status: \"published\" --- # Adjacency pair（隣接ペア） あいさつ-あいさつ、質問-回答のように、ある発話が次の応答の型を強く予期させる組み合わせです。会話の順序構造を見る基本単位です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"adjacency-pair\" title: \"隣接ペア（Adjacency pair）\" tags: [\"会話分析\",\"用語\",\"順序\"] sources: \"isca-turntaking-1974\" status: \"published\" --- # 隣接ペア（Adjacency pair） あいさつ-あいさつ、質問-回答のように、ある発話が次の応答の型を強く予期させる組み合わせです。会話の順序構造を見る基本単位です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -29,7 +29,7 @@
     "slug": "anonymization",
     "title": "anonymization.md",
     "tags": [],
-    "text": "--- slug: \"anonymization\" title: \"Anonymization（匿名化）\" tags: [\"倫理\",\"用語\",\"記録\"] sources: \"talkbank-jefferson-nb\" status: \"published\" --- # Anonymization（匿名化） 個人や場所が特定されないように、名前・固有情報・識別可能な特徴を加工することです。授業でデータを扱う前提として重要です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"anonymization\" title: \"匿名化（Anonymization）\" tags: [\"倫理\",\"用語\",\"記録\"] sources: \"talkbank-jefferson-nb\" status: \"published\" --- # 匿名化（Anonymization） 個人や場所が特定されないように、名前・固有情報・識別可能な特徴を加工することです。授業でデータを扱う前提として重要です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -37,7 +37,7 @@
     "slug": "background-expectancies",
     "title": "background-expectancies.md",
     "tags": [],
-    "text": "--- slug: \"background-expectancies\" title: \"Background expectancies（背景的期待）\" tags: [\"基礎\",\"用語\",\"分析\"] sources: [\"wiley-sem\",\"wikipedia-garfinkel\"] status: \"published\" --- # Background expectancies（背景的期待） 日常行為が成り立つために参加者が暗黙に共有している前提や期待のことです。ブリーチングの発想を理解する鍵になります。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"background-expectancies\" title: \"背景的期待（Background expectancies）\" tags: [\"基礎\",\"用語\",\"分析\"] sources: [\"wiley-sem\",\"wikipedia-garfinkel\"] status: \"published\" --- # 背景的期待（Background expectancies） 日常行為が成り立つために参加者が暗黙に共有している前提や期待のことです。ブリーチングの発想を理解する鍵になります。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -45,7 +45,7 @@
     "slug": "breaching",
     "title": "breaching.md",
     "tags": [],
-    "text": "--- slug: \"breaching\" title: \"Breaching（ブリーチング）\" tags: [\"基礎\",\"用語\",\"倫理\"] sources: [\"wiley-sem\",\"wikipedia-garfinkel\"] status: \"reviewed\" --- # Breaching（ブリーチング） 日常の「当たり前」をあえて崩し、その反応から背景的な期待（background expectancies）を可視化する発想です。 ## 授業での扱い - 実社会で危険・迷惑になる実践は行わない。 - 模擬データや安全な例で分析の考え方だけ学ぶ。 ## 注意 - 面白さ優先ではなく、倫理と安全を先に確認する。"
+    "text": "--- slug: \"breaching\" title: \"ブリーチング（Breaching）\" tags: [\"基礎\",\"用語\",\"倫理\"] sources: [\"wiley-sem\",\"wikipedia-garfinkel\"] status: \"reviewed\" --- # ブリーチング（Breaching） 日常の「当たり前」をあえて崩し、その反応から背景的な期待（background expectancies）を可視化する発想です。 ## 授業での扱い - 実社会で危険・迷惑になる実践は行わない。 - 模擬データや安全な例で分析の考え方だけ学ぶ。 ## 注意 - 面白さ優先ではなく、倫理と安全を先に確認する。"
   },
   {
     "status": "unknown",
@@ -53,7 +53,7 @@
     "slug": "consent",
     "title": "consent.md",
     "tags": [],
-    "text": "--- slug: \"consent\" title: \"Consent（同意）\" tags: [\"倫理\",\"用語\",\"観察\"] sources: \"britannica-em\" status: \"published\" --- # Consent（同意） 観察や記録、共有の目的・範囲を説明し、本人が理解したうえで了承することです。学校現場では保護者・学校のルール確認も必要です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"consent\" title: \"同意（Consent）\" tags: [\"倫理\",\"用語\",\"観察\"] sources: \"britannica-em\" status: \"published\" --- # 同意（Consent） 観察や記録、共有の目的・範囲を説明し、本人が理解したうえで了承することです。学校現場では保護者・学校のルール確認も必要です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -61,7 +61,7 @@
     "slug": "description",
     "title": "description.md",
     "tags": [],
-    "text": "--- slug: \"description\" title: \"Description（記述）\" tags: [\"記述\",\"用語\",\"基礎\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"published\" --- # Description（記述） 観察した事柄を、時刻・発話・行為・順序などの形で再確認できるように書くことです。分析の前段階として重要です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"description\" title: \"記述（Description）\" tags: [\"記述\",\"用語\",\"基礎\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"published\" --- # 記述（Description） 観察した事柄を、時刻・発話・行為・順序などの形で再確認できるように書くことです。分析の前段階として重要です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -69,7 +69,7 @@
     "slug": "ethics",
     "title": "ethics.md",
     "tags": [],
-    "text": "--- slug: \"ethics\" title: \"Ethics（倫理）\" tags: [\"倫理\",\"用語\",\"基礎\"] sources: \"britannica-em\" status: \"published\" --- # Ethics（倫理） データ収集・記録・共有・発表の各段階で、対象者への配慮と安全性を確保する考え方です。探究授業では特に先に確認します。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"ethics\" title: \"倫理（Ethics）\" tags: [\"倫理\",\"用語\",\"基礎\"] sources: \"britannica-em\" status: \"published\" --- # 倫理（Ethics） データ収集・記録・共有・発表の各段階で、対象者への配慮と安全性を確保する考え方です。探究授業では特に先に確認します。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -77,7 +77,7 @@
     "slug": "indexicality",
     "title": "indexicality.md",
     "tags": [],
-    "text": "--- slug: \"indexicality\" title: \"Indexicality（文脈依存性）\" tags: [\"基礎\",\"用語\",\"記述\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"published\" --- # Indexicality（文脈依存性） 発話や行為の意味が、その場の文脈・関係・タイミングに依存して決まることです。 ## 例 - 「それ、いいね」は、褒め言葉にも皮肉にもなりうる。 - 意味は語そのものだけでなく、誰がいつどこで言ったかに依存する。 ## 授業での使い方 - 発話を切り出すときは、前後のやりとりを必ず残す。"
+    "text": "--- slug: \"indexicality\" title: \"文脈依存性（Indexicality）\" tags: [\"基礎\",\"用語\",\"記述\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"published\" --- # 文脈依存性（Indexicality） 発話や行為の意味が、その場の文脈・関係・タイミングに依存して決まることです。 ## 例 - 「それ、いいね」は、褒め言葉にも皮肉にもなりうる。 - 意味は語そのものだけでなく、誰がいつどこで言ったかに依存する。 ## 授業での使い方 - 発話を切り出すときは、前後のやりとりを必ず残す。"
   },
   {
     "status": "unknown",
@@ -85,7 +85,7 @@
     "slug": "observation",
     "title": "observation.md",
     "tags": [],
-    "text": "--- slug: \"observation\" title: \"Observation（観察）\" tags: [\"観察\",\"用語\",\"基礎\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"published\" --- # Observation（観察） EM/CAの学習では、まず評価や解釈を急がず、何が起きたかを観察可能な形で押さえることを重視します。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"observation\" title: \"観察（Observation）\" tags: [\"観察\",\"用語\",\"基礎\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"published\" --- # 観察（Observation） EM/CAの学習では、まず評価や解釈を急がず、何が起きたかを観察可能な形で押さえることを重視します。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -93,7 +93,7 @@
     "slug": "overlap",
     "title": "overlap.md",
     "tags": [],
-    "text": "--- slug: \"overlap\" title: \"Overlap（重なり発話）\" tags: [\"会話分析\",\"用語\",\"順番取り\"] sources: \"isca-overlap-2000\" status: \"published\" --- # Overlap（重なり発話） 複数の参加者の発話が同時に重なる現象です。単なる混乱としてではなく、順番取りの調整過程として分析します。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"overlap\" title: \"重なり発話（Overlap）\" tags: [\"会話分析\",\"用語\",\"順番取り\"] sources: \"isca-overlap-2000\" status: \"published\" --- # 重なり発話（Overlap） 複数の参加者の発話が同時に重なる現象です。単なる混乱としてではなく、順番取りの調整過程として分析します。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -101,7 +101,7 @@
     "slug": "reflexivity",
     "title": "reflexivity.md",
     "tags": [],
-    "text": "--- slug: \"reflexivity\" title: \"Reflexivity（反射性）\" tags: [\"基礎\",\"用語\",\"分析\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"reviewed\" --- # Reflexivity（反射性） EMでの reflexivity は、行為が状況を作りながら、同時にその状況の意味づけにも使われることを指します。 ## 例 - 授業で先生が「では始めます」と言う行為は、授業開始を説明するだけでなく、実際に開始を成立させる。 ## 授業での観点 - 行為が「状況の結果」でもあり「状況を作る手段」でもある点を見る。"
+    "text": "--- slug: \"reflexivity\" title: \"反射性（Reflexivity）\" tags: [\"基礎\",\"用語\",\"分析\"] sources: [\"britannica-em\",\"wiley-sem\"] status: \"reviewed\" --- # 反射性（Reflexivity） EMでの reflexivity は、行為が状況を作りながら、同時にその状況の意味づけにも使われることを指します。 ## 例 - 授業で先生が「では始めます」と言う行為は、授業開始を説明するだけでなく、実際に開始を成立させる。 ## 授業での観点 - 行為が「状況の結果」でもあり「状況を作る手段」でもある点を見る。"
   },
   {
     "status": "unknown",
@@ -109,7 +109,7 @@
     "slug": "repair",
     "title": "repair.md",
     "tags": [],
-    "text": "--- slug: \"repair\" title: \"Repair（修復）\" tags: [\"会話分析\",\"用語\",\"分析\"] sources: [\"isca-turntaking-1974\",\"isca-overlap-2000\"] status: \"published\" --- # Repair（修復） 会話中の聞き取りづらさ・言い間違い・理解のずれを、その場で直す実践です。 ## 例 - 「え、もう一回言って」 - 「いや、昨日じゃなくて一昨日」 ## 授業での意味 - 会話が壊れやすいからこそ、参加者は修復の方法を持っていることが見える。"
+    "text": "--- slug: \"repair\" title: \"修復（Repair）\" tags: [\"会話分析\",\"用語\",\"分析\"] sources: [\"isca-turntaking-1974\",\"isca-overlap-2000\"] status: \"published\" --- # 修復（Repair） 会話中の聞き取りづらさ・言い間違い・理解のずれを、その場で直す実践です。 ## 例 - 「え、もう一回言って」 - 「いや、昨日じゃなくて一昨日」 ## 授業での意味 - 会話が壊れやすいからこそ、参加者は修復の方法を持っていることが見える。"
   },
   {
     "status": "unknown",
@@ -117,7 +117,7 @@
     "slug": "sequence",
     "title": "sequence.md",
     "tags": [],
-    "text": "--- slug: \"sequence\" title: \"Sequence（連鎖）\" tags: [\"会話分析\",\"用語\",\"順序\"] sources: \"isca-turntaking-1974\" status: \"published\" --- # Sequence（連鎖） ある発話とそれへの応答、さらにその後続応答まで含めた連なりを指します。個々の発話を単独で読むのではなく、前後関係で読むための観点です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"sequence\" title: \"連鎖（Sequence）\" tags: [\"会話分析\",\"用語\",\"順序\"] sources: \"isca-turntaking-1974\" status: \"published\" --- # 連鎖（Sequence） ある発話とそれへの応答、さらにその後続応答まで含めた連なりを指します。個々の発話を単独で読むのではなく、前後関係で読むための観点です。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -125,7 +125,7 @@
     "slug": "transcript",
     "title": "transcript.md",
     "tags": [],
-    "text": "--- slug: \"transcript\" title: \"Transcript（転写）\" tags: [\"転写\",\"用語\",\"記述\"] sources: [\"talkresearch-transcription\",\"talkbank-jefferson-nb\"] status: \"published\" --- # Transcript（転写） 録音・録画データを分析可能な形に書き起こしたものです。何をどこまで記号化するかで、見える現象が変わります。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
+    "text": "--- slug: \"transcript\" title: \"転写（Transcript）\" tags: [\"転写\",\"用語\",\"記述\"] sources: [\"talkresearch-transcription\",\"talkbank-jefferson-nb\"] status: \"published\" --- # 転写（Transcript） 録音・録画データを分析可能な形に書き起こしたものです。何をどこまで記号化するかで、見える現象が変わります。 ## 授業での見方 - 単語の定義だけでなく、どの場面で使うかを確認する - 観察・記述・分析のどこで使う概念かを意識する"
   },
   {
     "status": "unknown",
@@ -133,7 +133,7 @@
     "slug": "turn-taking",
     "title": "turn-taking.md",
     "tags": [],
-    "text": "--- slug: \"turn-taking\" title: \"Turn-taking（順番取り）\" tags: [\"会話分析\",\"用語\",\"観察\"] sources: [\"isca-turntaking-1974\",\"isca-overlap-2000\"] status: \"published\" --- # Turn-taking（順番取り） 会話で、誰がいつ話すかがどのように調整されるかを扱う会話分析の中心概念です。 ## 重要点 - 順番は完全にランダムではない。 - 参加者はその場で順番を調整している。 - 重なり（overlap）も無秩序なノイズとは限らない。 ## 授業で見るポイント - 発話の切れ目 - 指名・視線・うなずき - 同時開始が起きた後の調整"
+    "text": "--- slug: \"turn-taking\" title: \"順番取り（Turn-taking）\" tags: [\"会話分析\",\"用語\",\"観察\"] sources: [\"isca-turntaking-1974\",\"isca-overlap-2000\"] status: \"published\" --- # 順番取り（Turn-taking） 会話で、誰がいつ話すかがどのように調整されるかを扱う会話分析の中心概念です。 ## 重要点 - 順番は完全にランダムではない。 - 参加者はその場で順番を調整している。 - 重なり（overlap）も無秩序なノイズとは限らない。 ## 授業で見るポイント - 発話の切れ目 - 指名・視線・うなずき - 同時開始が起きた後の調整"
   },
   {
     "status": "unknown",

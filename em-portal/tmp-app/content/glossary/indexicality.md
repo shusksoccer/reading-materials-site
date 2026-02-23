@@ -1,12 +1,12 @@
 ﻿---
 slug: "indexicality"
-title: "Indexicality（文脈依存性）"
+title: "文脈依存性（Indexicality）"
 tags: ["基礎","用語","記述"]
 sources: ["britannica-em","wiley-sem"]
 status: "published"
 ---
 
-# Indexicality（文脈依存性）
+# 文脈依存性（Indexicality）
 
 発話や行為の意味が、その場の文脈・関係・タイミングに依存して決まることです。
 
@@ -16,3 +16,4 @@ status: "published"
 
 ## 授業での使い方
 - 発話を切り出すときは、前後のやりとりを必ず残す。
+
