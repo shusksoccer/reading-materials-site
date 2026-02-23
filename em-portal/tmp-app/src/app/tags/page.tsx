@@ -7,7 +7,7 @@ export default function TagsPage() {
   return (
     <section>
       <div className="card section-hero section-hero-tags reveal">
-        <p className="section-kicker">Tags</p>
+        <p className="section-kicker">タグ</p>
         <h1>タグ一覧</h1>
         <p>
           「観察」「記述」「会話分析」など、授業の観点で教材を横断できます。件数を見ながら導線として使ってください。

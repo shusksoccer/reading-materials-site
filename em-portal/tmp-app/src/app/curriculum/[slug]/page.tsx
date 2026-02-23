@@ -21,7 +21,7 @@ export default async function LessonDetailPage({
   return (
     <article>
       <header className="card detail-hero detail-hero-lesson reveal">
-        <p className="section-kicker">Lesson</p>
+        <p className="section-kicker">授業</p>
         <h1>{lesson.title}</h1>
         <div className="detail-meta-row">
           <span className="detail-pill">授業{String(lesson.lesson_no)}コマ目</span>

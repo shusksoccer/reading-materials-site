@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MarkdownBody } from "@/components/markdown-body";
 import { SourceLinks } from "@/components/source-links";
 import { getCollection } from "@/lib/content";
-import { STATUS_OPTIONS, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
+import { STATUS_OPTIONS, getStatusLabel, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
 export default async function PeoplePage({
   searchParams,
@@ -27,14 +27,14 @@ export default async function PeoplePage({
   return (
     <section>
       <div className="card section-hero section-hero-people reveal">
-        <p className="section-kicker">People</p>
+        <p className="section-kicker">研究者</p>
         <h1>研究者紹介</h1>
         <p>
           人物史を長く追うよりも、「授業でどの考え方を使うか」に焦点を当てたメモです。
           各ページは覚える一言つきで、配布資料の欄外解説に使えます。
         </p>
         <p className="meta">
-          status: {statusFilter} / {filtered.length}件表示
+          状態: {getStatusLabel(statusFilter)} / {filtered.length}件表示
         </p>
         <div className="chip-row" aria-label="status filters">
           {STATUS_OPTIONS.map((status) => (
@@ -44,7 +44,7 @@ export default async function PeoplePage({
               className="chip-link"
               aria-current={statusFilter === status ? "page" : undefined}
             >
-              {status} ({counts[status]})
+              {getStatusLabel(status)} ({counts[status]})
             </Link>
           ))}
         </div>
@@ -53,7 +53,7 @@ export default async function PeoplePage({
         {filtered.map((doc) => (
           <article key={doc.slug} className="card profile-card">
             <h2>{doc.title}</h2>
-            <p className="meta">status: {getStatusValue(doc.status)}</p>
+            <p className="meta">状態: {getStatusLabel(getStatusValue(doc.status))}</p>
             <MarkdownBody body={doc.body} />
             <SourceLinks sourceIds={doc.sources} />
           </article>
@@ -62,4 +62,3 @@ export default async function PeoplePage({
     </section>
   );
 }
-

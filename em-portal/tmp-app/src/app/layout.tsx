@@ -61,7 +61,7 @@ export default function RootLayout({
         <header className="site-header reveal">
           <div className="container">
             <Link href="/" className="site-title">
-              Ethnomethodology Portal
+              エスノメソドロジー探究ポータル
             </Link>
             <nav aria-label="メインナビゲーション" className="main-nav">
               {navItems.map((item) => (

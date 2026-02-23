@@ -17,3 +17,20 @@ export function parseStatusFilter(value: string | string[] | undefined): StatusF
   return "all";
 }
 
+export function getStatusLabel(value: StatusFilter | string | undefined): string {
+  const raw = String(value ?? "").trim().toLowerCase();
+  switch (raw) {
+    case "all":
+      return "すべて";
+    case "inbox":
+      return "収集済み（未整理）";
+    case "reviewed":
+      return "レビュー済み";
+    case "published":
+      return "公開用";
+    case "unknown":
+      return "未設定";
+    default:
+      return raw || "未設定";
+  }
+}

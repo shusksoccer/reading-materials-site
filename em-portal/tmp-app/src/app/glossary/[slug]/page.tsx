@@ -21,7 +21,7 @@ export default async function GlossaryDetailPage({
   return (
     <article>
       <header className="card detail-hero detail-hero-glossary reveal">
-        <p className="section-kicker">Glossary</p>
+        <p className="section-kicker">用語集</p>
         <h1>{term.title}</h1>
         <div className="detail-meta-row">
           <PrintButton label="用語を印刷" />

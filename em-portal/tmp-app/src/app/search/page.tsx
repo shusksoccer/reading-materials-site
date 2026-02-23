@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import searchIndex from "../../../public/search-index.json";
-import { STATUS_OPTIONS, getStatusValue } from "@/lib/status-filter";
+import { STATUS_OPTIONS, getStatusLabel, getStatusValue } from "@/lib/status-filter";
 
 type SearchRow = {
   status?: string;
@@ -74,7 +74,7 @@ export default function SearchPage() {
   return (
     <section>
       <div className="card section-hero section-hero-search reveal">
-        <p className="section-kicker">Search</p>
+        <p className="section-kicker">検索</p>
         <h1>検索</h1>
         <p>教材全体から、タイトル・タグ・本文を横断検索できます。</p>
         <input
@@ -105,7 +105,7 @@ export default function SearchPage() {
               className={statusFilter === status ? "chip-button active" : "chip-button"}
               onClick={() => setStatusFilter(status)}
             >
-              {status} ({statusCounts[status]})
+              {getStatusLabel(status)} ({statusCounts[status]})
             </button>
           ))}
         </div>
@@ -122,7 +122,7 @@ export default function SearchPage() {
               <div className="search-head-top">
                 <span className={`search-kind kind-${item.kind}`}>{labelMap[item.kind] ?? item.kind}</span>
                 <span className="meta search-slug">{item.slug}</span>
-                <span className="meta search-slug">status: {getStatusValue(item.status)}</span>
+                <span className="meta search-slug">状態: {getStatusLabel(getStatusValue(item.status))}</span>
               </div>
               <h2>
                 <Link href={buildHref(item)}>{item.title}</Link>

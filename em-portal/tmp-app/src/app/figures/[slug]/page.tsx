@@ -22,9 +22,9 @@ export default async function FigureDetailPage({
   return (
     <article>
       <header className="card detail-hero detail-hero-figure reveal">
-        <p className="section-kicker">Figure</p>
+        <p className="section-kicker">図解</p>
         <h1>{figure.title}</h1>
-        <p className="meta">alt: {String(figure.alt ?? "")}</p>
+        <p className="meta">代替テキスト: {String(figure.alt ?? "")}</p>
         <div className="detail-meta-row">
           <PrintButton label="図解を印刷" />
         </div>

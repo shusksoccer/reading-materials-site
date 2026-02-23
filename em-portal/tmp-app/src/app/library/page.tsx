@@ -5,6 +5,7 @@ import { getCollection } from "@/lib/content";
 import {
   STATUS_OPTIONS,
   type StatusFilter,
+  getStatusLabel,
   getStatusValue,
   parseStatusFilter,
 } from "@/lib/status-filter";
@@ -34,13 +35,13 @@ export default async function LibraryPage({
   return (
     <section>
       <div className="card section-hero section-hero-library reveal">
-        <p className="section-kicker">Library</p>
+        <p className="section-kicker">文献</p>
         <h1>文献リスト</h1>
         <p>
           授業で使う順に読みやすい短い文献メモです。難易度・用途・読むポイントが先に見える形にしています。
         </p>
         <p className="meta">
-          status: {statusFilter} / {filteredDocs.length}件表示
+          状態: {getStatusLabel(statusFilter)} / {filteredDocs.length}件表示
         </p>
         <div className="chip-row" aria-label="status filters">
           {STATUS_OPTIONS.map((status) => {
@@ -52,7 +53,7 @@ export default async function LibraryPage({
                 className="chip-link"
                 aria-current={statusFilter === status ? "page" : undefined}
               >
-                {status} ({statusCounts[status]})
+                {getStatusLabel(status)} ({statusCounts[status]})
               </Link>
             );
           })}
@@ -73,8 +74,8 @@ export default async function LibraryPage({
               <div>
                 <h2>{doc.title}</h2>
                 <p className="meta">
-                  著者: {String(doc.author ?? "-")} / 年: {String(doc.year ?? "-")} / status:{" "}
-                  {getStatusValue(doc.status)}
+                  著者: {String(doc.author ?? "-")} / 年: {String(doc.year ?? "-")} / 状態:{" "}
+                  {getStatusLabel(getStatusValue(doc.status))}
                 </p>
               </div>
               <div className="library-meta-box">

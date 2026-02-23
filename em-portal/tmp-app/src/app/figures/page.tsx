@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getCollection } from "@/lib/content";
-import { STATUS_OPTIONS, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
+import { STATUS_OPTIONS, getStatusLabel, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
 export default async function FiguresPage({
   searchParams,
@@ -26,13 +26,13 @@ export default async function FiguresPage({
   return (
     <section>
       <div className="card section-hero section-hero-figures reveal">
-        <p className="section-kicker">Figures</p>
+        <p className="section-kicker">図解</p>
         <h1>図解ギャラリー</h1>
         <p>
           授業の説明に使えるSVG図解です。1図1主張で作成しており、各図解ページで説明文と参考リンクを確認できます。
         </p>
         <p className="meta">
-          status: {statusFilter} / {filtered.length}件表示
+          状態: {getStatusLabel(statusFilter)} / {filtered.length}件表示
         </p>
         <div className="chip-row" aria-label="status filters">
           {STATUS_OPTIONS.map((status) => (
@@ -42,7 +42,7 @@ export default async function FiguresPage({
               className="chip-link"
               aria-current={statusFilter === status ? "page" : undefined}
             >
-              {status} ({counts[status]})
+              {getStatusLabel(status)} ({counts[status]})
             </Link>
           ))}
         </div>
@@ -67,7 +67,7 @@ export default async function FiguresPage({
             <div className="figure-caption">
               <h2>{item.title}</h2>
               <p>{String(item.alt ?? "")}</p>
-              <p className="meta">status: {getStatusValue(item.status)}</p>
+              <p className="meta">状態: {getStatusLabel(getStatusValue(item.status))}</p>
               <div className="tags">
                 {item.tags.map((tag) => (
                   <span key={tag} className="tag">{tag}</span>
@@ -80,4 +80,3 @@ export default async function FiguresPage({
     </section>
   );
 }
-

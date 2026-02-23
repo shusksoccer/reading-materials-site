@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { DocCard } from "@/components/doc-card";
 import { getCollection, getTagMap } from "@/lib/content";
-import { STATUS_OPTIONS, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
+import { STATUS_OPTIONS, getStatusLabel, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
 export default async function CurriculumPage({
   searchParams,
@@ -28,14 +28,14 @@ export default async function CurriculumPage({
   return (
     <section>
       <div className="card section-hero section-hero-curriculum reveal">
-        <p className="section-kicker">Curriculum</p>
+        <p className="section-kicker">カリキュラム</p>
         <h1>カリキュラム</h1>
         <p>
           全6コマを、観察から発表まで順番に学ぶ構成です。各コマは50分想定で、
           次の授業につながる最小限の課題を含みます。
         </p>
         <p className="meta">
-          status: {statusFilter} / {filtered.length}件表示
+          状態: {getStatusLabel(statusFilter)} / {filtered.length}件表示
         </p>
         <div className="chip-row" aria-label="status filters">
           {STATUS_OPTIONS.map((status) => (
@@ -45,7 +45,7 @@ export default async function CurriculumPage({
               className="chip-link"
               aria-current={statusFilter === status ? "page" : undefined}
             >
-              {status} ({counts[status]})
+              {getStatusLabel(status)} ({counts[status]})
             </Link>
           ))}
         </div>
@@ -82,4 +82,3 @@ export default async function CurriculumPage({
     </section>
   );
 }
-

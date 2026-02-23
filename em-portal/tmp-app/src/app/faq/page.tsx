@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MarkdownBody } from "@/components/markdown-body";
 import { SourceLinks } from "@/components/source-links";
 import { getCollection } from "@/lib/content";
-import { STATUS_OPTIONS, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
+import { STATUS_OPTIONS, getStatusLabel, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
 export default async function FaqPage({
   searchParams,
@@ -33,7 +33,7 @@ export default async function FaqPage({
           授業で止まりやすいポイントを短く確認できます。回答は短く、チェック項目は共通でそろえています。
         </p>
         <p className="meta">
-          status: {statusFilter} / {filtered.length}件表示
+          状態: {getStatusLabel(statusFilter)} / {filtered.length}件表示
         </p>
         <div className="chip-row" aria-label="status filters">
           {STATUS_OPTIONS.map((status) => (
@@ -43,7 +43,7 @@ export default async function FaqPage({
               className="chip-link"
               aria-current={statusFilter === status ? "page" : undefined}
             >
-              {status} ({counts[status]})
+              {getStatusLabel(status)} ({counts[status]})
             </Link>
           ))}
         </div>
@@ -53,7 +53,7 @@ export default async function FaqPage({
           <article key={faq.slug} className="card faq-card">
             <p className="faq-index">Q{index + 1}</p>
             <h2>{faq.title}</h2>
-            <p className="meta">status: {getStatusValue(faq.status)}</p>
+            <p className="meta">状態: {getStatusLabel(getStatusValue(faq.status))}</p>
             <MarkdownBody body={faq.body} />
             <SourceLinks sourceIds={faq.sources} />
           </article>
@@ -62,4 +62,3 @@ export default async function FaqPage({
     </section>
   );
 }
-

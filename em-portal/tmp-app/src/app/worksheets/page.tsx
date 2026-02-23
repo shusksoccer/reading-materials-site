@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { DocCard } from "@/components/doc-card";
 import { getCollection } from "@/lib/content";
-import { STATUS_OPTIONS, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
+import { STATUS_OPTIONS, getStatusLabel, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
 export default async function WorksheetsPage({
   searchParams,
@@ -26,14 +26,14 @@ export default async function WorksheetsPage({
   return (
     <section>
       <div className="card section-hero section-hero-worksheets reveal">
-        <p className="section-kicker">Worksheets</p>
+        <p className="section-kicker">ワーク集</p>
         <h1>ワーク集</h1>
         <p>
           20分で実施できる配布用ワークです。記入欄、評価観点、発展課題を揃えてあるので、
           授業中でも宿題でも使えます。
         </p>
         <p className="meta">
-          status: {statusFilter} / {filtered.length}件表示
+          状態: {getStatusLabel(statusFilter)} / {filtered.length}件表示
         </p>
         <div className="chip-row" aria-label="status filters">
           {STATUS_OPTIONS.map((status) => (
@@ -43,7 +43,7 @@ export default async function WorksheetsPage({
               className="chip-link"
               aria-current={statusFilter === status ? "page" : undefined}
             >
-              {status} ({counts[status]})
+              {getStatusLabel(status)} ({counts[status]})
             </Link>
           ))}
         </div>
@@ -62,4 +62,3 @@ export default async function WorksheetsPage({
     </section>
   );
 }
-

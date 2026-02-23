@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { DocCard } from "@/components/doc-card";
 import { getCollection } from "@/lib/content";
-import { STATUS_OPTIONS, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
+import { STATUS_OPTIONS, getStatusLabel, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
 export default async function GlossaryPage({
   searchParams,
@@ -27,14 +27,14 @@ export default async function GlossaryPage({
   return (
     <section>
       <div className="card section-hero section-hero-glossary reveal">
-        <p className="section-kicker">Glossary</p>
+        <p className="section-kicker">用語集</p>
         <h1>用語集</h1>
         <p>
           授業で頻出する語を、短い定義・身近な例・使い方の3点で確認できます。
           まずここで意味をつかみ、各授業ページで使ってください。
         </p>
         <p className="meta">
-          status: {statusFilter} / {filtered.length}件表示
+          状態: {getStatusLabel(statusFilter)} / {filtered.length}件表示
         </p>
         <div className="chip-row" aria-label="status filters">
           {STATUS_OPTIONS.map((status) => (
@@ -44,7 +44,7 @@ export default async function GlossaryPage({
               className="chip-link"
               aria-current={statusFilter === status ? "page" : undefined}
             >
-              {status} ({counts[status]})
+              {getStatusLabel(status)} ({counts[status]})
             </Link>
           ))}
         </div>
@@ -65,4 +65,3 @@ export default async function GlossaryPage({
     </section>
   );
 }
-
