@@ -30,3 +30,4 @@
 - Added an L1 lesson toolkit block to `/curriculum/[slug]` with direct links to key figures/glossary/worksheet/FAQ for in-class navigation.
 - Aligned `library/lib-2` to `lib-5` with `読み方の目安` and more consistent classroom-facing notes to match `lib-1`.
 - Improved `/people` list cards for classroom scanning: surface `覚える一言` first and move full memo/source blocks into collapsible sections.
+- Rebuilt `/intro` as a practical entry page with quick-start steps, starter links (L1/figures/glossary/worksheet/FAQ), and an inline preview of the first lesson.
