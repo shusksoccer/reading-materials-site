@@ -25,3 +25,4 @@
 - Fixed mojibake glossary entries `adjacency-pair` and `anonymization` with clean Japanese definitions/examples for classroom use.
 - Cleaned residual UTF-8 BOM markers from `content/faq/faq-1.md` and `content/lessons/l1-what-is-em.md` (content unchanged, formatting hygiene).
 - Replaced 14 placeholder glossary entries with Japanese classroom-ready definitions/examples (`context`, `data-session`, `deviation`, `embodiment`, `fieldnote`, `gaze`, `inference`, `institutional-talk`, `membership-categorization`, `norm`, `presentation`, `silence`, `topic-management`, `validity`).
+- Standardized `faq-1` to `faq-10` into a consistent structure (`回答（短く） / 具体例（学校・SNS） / 注意点 / チェック`) and added missing `status` where needed.
