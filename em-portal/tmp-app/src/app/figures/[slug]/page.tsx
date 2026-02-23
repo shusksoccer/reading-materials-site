@@ -6,6 +6,8 @@ import { PrintButton } from "@/components/print-button";
 import { SourceLinks } from "@/components/source-links";
 import { getCollection, getDocBySlug } from "@/lib/content";
 
+const FIGURE_ASSET_VERSION = "ja-svg-20260223-1";
+
 export function generateStaticParams() {
   return getCollection("figures").map((item) => ({ slug: item.slug }));
 }
@@ -39,7 +41,7 @@ export default async function FigureDetailPage({
 
       <div className="card detail-figure-frame reveal" style={{ padding: "0.75rem" }}>
         <Image
-          src={`/figures/${figure.slug}.svg`}
+          src={`/figures/${figure.slug}.svg?v=${FIGURE_ASSET_VERSION}`}
           alt={String(figure.alt ?? figure.title)}
           width={1200}
           height={720}

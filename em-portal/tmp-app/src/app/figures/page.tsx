@@ -3,6 +3,8 @@ import Link from "next/link";
 import { getCollection } from "@/lib/content";
 import { STATUS_OPTIONS, getStatusLabel, getStatusValue, parseStatusFilter } from "@/lib/status-filter";
 
+const FIGURE_ASSET_VERSION = "ja-svg-20260223-1";
+
 export default async function FiguresPage({
   searchParams,
 }: {
@@ -50,7 +52,7 @@ export default async function FiguresPage({
         {filtered.map((item) => (
           <Link key={item.slug} href={`/figures/${item.slug}`} className="figure-tile">
             <div className="figure-thumb">
-              <Image src={`/figures/${item.slug}.svg`} alt={String(item.alt ?? item.title)} width={1200} height={720} />
+              <Image src={`/figures/${item.slug}.svg?v=${FIGURE_ASSET_VERSION}`} alt={String(item.alt ?? item.title)} width={1200} height={720} />
             </div>
             <div className="figure-caption">
               <h2>{item.title}</h2>
