@@ -18,3 +18,4 @@
 - Removed obsolete/untracked `ethnomethodology_portal_codex_instructions.md` (mojibake memo duplicate of WORKLOG usage notes).
 - Expanded all `tmp-app/content/figures/*.md` detail pages with lesson-ready sections (`導入 / 活動 / 確認`) for classroom use.
 - Hardened `tmp-app/src/lib/content.ts` and `tmp-app/scripts/generate-search-index.mjs` to strip UTF-8 BOM before parsing JSON/frontmatter (prevents build failures from PowerShell-saved files).
+- Added classroom-ready concrete examples (school / SNS) to all figure detail pages to make explanations easier during lessons.
