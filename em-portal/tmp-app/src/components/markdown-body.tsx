@@ -1,4 +1,17 @@
-﻿import type { ReactNode } from "react";
+import type { ReactNode } from "react";
+import {
+  CautionBlock,
+  ConceptBlock,
+  ExampleBlock,
+  ExerciseBlock,
+  TranscriptBlock,
+} from "@/components/content-blocks";
+
+type CustomBlockType = "concept" | "example" | "exercise" | "caution" | "transcript";
+
+type ParsedSection =
+  | { type: "line"; text: string }
+  | { type: "custom-block"; blockType: CustomBlockType; title?: string; content: string };
 
 function getYoutubeId(url: string): string | null {
   try {
@@ -24,6 +37,154 @@ function getGoogleDriveFileId(url: string): string | null {
   } catch {
     return null;
   }
+}
+
+function parseCustomBlocks(lines: string[]): ParsedSection[] {
+  const result: ParsedSection[] = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
+    const match = line.match(/^:::(concept|example|exercise|caution|transcript)\s*(.*)?$/);
+    if (!match) {
+      result.push({ type: "line", text: line });
+      i += 1;
+      continue;
+    }
+
+    const blockType = match[1] as CustomBlockType;
+    const title = match[2]?.trim() || undefined;
+    const content: string[] = [];
+    i += 1;
+    while (i < lines.length && lines[i].trim() !== ":::") {
+      content.push(lines[i]);
+      i += 1;
+    }
+    if (i < lines.length && lines[i].trim() === ":::") {
+      i += 1;
+    }
+
+    result.push({
+      type: "custom-block",
+      blockType,
+      title,
+      content: content.join("\n"),
+    });
+  }
+
+  return result;
+}
+
+function renderBasicLines(content: string, keyPrefix: string): ReactNode[] {
+  const lines = content.split("\n");
+  const nodes: ReactNode[] = [];
+  let listBuffer: ReactNode[] = [];
+  let orderedListBuffer: ReactNode[] = [];
+  let listKey = 0;
+
+  const flushUnordered = () => {
+    if (listBuffer.length) {
+      nodes.push(
+        <ul key={`${keyPrefix}-ul-${listKey++}`} className="prose-list">
+          {listBuffer}
+        </ul>,
+      );
+      listBuffer = [];
+    }
+  };
+
+  const flushOrdered = () => {
+    if (orderedListBuffer.length) {
+      nodes.push(
+        <ol key={`${keyPrefix}-ol-${listKey++}`} style={{ margin: "0.5rem 0 0.7rem 1.1rem", padding: 0 }}>
+          {orderedListBuffer}
+        </ol>,
+      );
+      orderedListBuffer = [];
+    }
+  };
+
+  lines.forEach((line, index) => {
+    const trimmed = line.trim();
+    if (!trimmed) {
+      flushUnordered();
+      flushOrdered();
+      nodes.push(<br key={`${keyPrefix}-br-${index}`} />);
+      return;
+    }
+
+    if (trimmed.startsWith("- ")) {
+      flushOrdered();
+      listBuffer.push(<li key={`${keyPrefix}-li-${index}`}>{trimmed.slice(2)}</li>);
+      return;
+    }
+
+    const orderedMatch = trimmed.match(/^\d+\.\s+(.+)$/);
+    if (orderedMatch) {
+      flushUnordered();
+      orderedListBuffer.push(<li key={`${keyPrefix}-oli-${index}`}>{orderedMatch[1]}</li>);
+      return;
+    }
+
+    flushUnordered();
+    flushOrdered();
+    nodes.push(<p key={`${keyPrefix}-p-${index}`}>{trimmed}</p>);
+  });
+
+  flushUnordered();
+  flushOrdered();
+  return nodes;
+}
+
+function renderCustomBlock(section: Extract<ParsedSection, { type: "custom-block" }>, index: number): ReactNode {
+  const key = `cb-${section.blockType}-${index}`;
+  const bodyNodes = renderBasicLines(section.content, key);
+
+  if (section.blockType === "concept") {
+    return <ConceptBlock key={key} title={section.title}>{bodyNodes}</ConceptBlock>;
+  }
+  if (section.blockType === "example") {
+    return <ExampleBlock key={key} title={section.title}>{bodyNodes}</ExampleBlock>;
+  }
+  if (section.blockType === "exercise") {
+    return <ExerciseBlock key={key} title={section.title}>{bodyNodes}</ExerciseBlock>;
+  }
+  if (section.blockType === "caution") {
+    return <CautionBlock key={key}>{bodyNodes}</CautionBlock>;
+  }
+
+  const transcriptLines: { no: number; text: string }[] = [];
+  const annotationLines: string[] = [];
+  let inAnnotation = false;
+  section.content.split("\n").forEach((line) => {
+    const trimmed = line.trim();
+    if (!trimmed) return;
+    if (trimmed === "---") {
+      inAnnotation = true;
+      return;
+    }
+    if (inAnnotation) {
+      annotationLines.push(trimmed);
+      return;
+    }
+    const match = trimmed.match(/^(\d+)\s*[:：]\s*(.+)$/);
+    if (match) {
+      transcriptLines.push({ no: Number(match[1]), text: match[2] });
+    }
+  });
+
+  if (!transcriptLines.length) {
+    return <TranscriptBlock key={key} lines={[]} annotation={section.content} label={section.title || "会話転写"} />;
+  }
+
+  return (
+    <TranscriptBlock
+      key={key}
+      lines={transcriptLines}
+      annotation={annotationLines.join(" ")}
+      label={section.title || "会話転写"}
+    />
+  );
 }
 
 function renderLine(line: string, index: number): ReactNode {
@@ -91,6 +252,7 @@ function renderLine(line: string, index: number): ReactNode {
 
 export function MarkdownBody({ body }: { body: string }) {
   const lines = body.split("\n");
+  const sections = parseCustomBlocks(lines);
   const nodes: ReactNode[] = [];
   let listBuffer: ReactNode[] = [];
   let listKey = 0;
@@ -106,14 +268,21 @@ export function MarkdownBody({ body }: { body: string }) {
     }
   };
 
-  lines.forEach((line, index) => {
-    const trimmed = line.trim();
+  sections.forEach((section, index) => {
+    if (section.type === "custom-block") {
+      flushList();
+      nodes.push(renderCustomBlock(section, index));
+      return;
+    }
+
+    const trimmed = section.text.trim();
     if (trimmed.startsWith("- ")) {
       listBuffer.push(<li key={`li-${index}`}>{trimmed.slice(2)}</li>);
       return;
     }
+
     flushList();
-    nodes.push(renderLine(line, index));
+    nodes.push(renderLine(section.text, index));
   });
   flushList();
 
