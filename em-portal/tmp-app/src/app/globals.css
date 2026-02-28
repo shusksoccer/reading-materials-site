@@ -1442,6 +1442,14 @@ input:focus-visible {
   border-left: 4px solid #d4c3a2;
 }
 
+.card-kind-people {
+  border-left: 4px solid #d4bcad;
+}
+
+.card-kind-faq {
+  border-left: 4px solid #d9c59f;
+}
+
 @media (max-width: 640px) {
   .transcript-line {
     grid-template-columns: 1.8rem 1fr;

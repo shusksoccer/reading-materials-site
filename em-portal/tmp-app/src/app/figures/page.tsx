@@ -50,7 +50,7 @@ export default async function FiguresPage({
 
       <div className="figure-gallery reveal" aria-label="図解一覧">
         {filtered.map((item) => (
-          <Link key={item.slug} href={`/figures/${item.slug}`} className="figure-tile">
+          <Link key={item.slug} href={`/figures/${item.slug}`} className="figure-tile card-kind-figures">
             <div className="figure-thumb">
               <Image src={`/figures/${item.slug}.svg?v=${FIGURE_ASSET_VERSION}`} alt={String(item.alt ?? item.title)} width={1200} height={720} />
             </div>

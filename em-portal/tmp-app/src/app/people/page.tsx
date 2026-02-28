@@ -53,7 +53,7 @@ export default async function PeoplePage({
       </div>
       <div className="grid two reveal">
         {filtered.map((doc) => (
-          <article key={doc.slug} className="card profile-card">
+          <article key={doc.slug} className="card profile-card card-kind-people">
             <h2>{doc.title}</h2>
             <p className="meta">状態: {getStatusLabel(getStatusValue(doc.status))}</p>
             {getMemorableLine(doc.body) ? (

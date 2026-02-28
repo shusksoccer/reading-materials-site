@@ -60,7 +60,7 @@ export default async function LibraryPage({
         </div>
         <div className="grid">
           {coreDocs.map((doc) => (
-            <LibraryCard key={doc.slug} doc={doc} href="/library" />
+            <LibraryCard key={doc.slug} doc={doc} />
           ))}
         </div>
       </section>
@@ -71,7 +71,7 @@ export default async function LibraryPage({
             <summary style={{ cursor: "pointer", fontWeight: 700 }}>補助文献（supplement） {supplementDocs.length}件</summary>
             <div className="grid" style={{ marginTop: "0.8rem" }}>
               {supplementDocs.map((doc) => (
-                <LibraryCard key={doc.slug} doc={doc} href="/library" />
+                <LibraryCard key={doc.slug} doc={doc} />
               ))}
             </div>
           </details>

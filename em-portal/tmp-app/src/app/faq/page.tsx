@@ -67,7 +67,7 @@ export default async function FaqPage({
       </div>
       <div className="grid reveal">
         {ordered.map((faq, index) => (
-          <article key={faq.slug} className="card faq-card">
+          <article key={faq.slug} className="card faq-card card-kind-faq">
             <p className="faq-index">Q{index + 1}</p>
             <h2>{faq.title}</h2>
             <p className="meta">状態: {getStatusLabel(getStatusValue(faq.status))}</p>
