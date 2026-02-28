@@ -33,15 +33,10 @@ export const metadata: Metadata = {
 };
 
 const navItems = [
-  { href: "/intro", label: "入門" },
-  { href: "/curriculum", label: "カリキュラム" },
-  { href: "/worksheets", label: "ワーク集" },
-  { href: "/glossary", label: "用語集" },
-  { href: "/figures", label: "図解" },
-  { href: "/library", label: "文献" },
-  { href: "/people", label: "研究者" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/search", label: "検索" },
+  { href: "/intro", label: "はじめる" },
+  { href: "/curriculum", label: "授業6コマ" },
+  { href: "/worksheets", label: "ワーク提出" },
+  { href: "/faq", label: "困ったとき" },
 ];
 
 export default function RootLayout({
