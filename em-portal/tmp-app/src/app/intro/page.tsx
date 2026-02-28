@@ -1,71 +1,64 @@
 import Link from "next/link";
-import { MarkdownBody } from "@/components/markdown-body";
-import { SourceLinks } from "@/components/source-links";
-import { getCollection } from "@/lib/content";
 
 export default function IntroPage() {
-  const lessons = getCollection("lessons");
-  const intro = lessons[0];
-
-  const starterLinks = [
-    { href: "/curriculum/l1-what-is-em", label: "L1 授業ページ", desc: "授業の流れ・ねらいを確認" },
-    { href: "/figures/fig-learning-route", label: "図解: 学習ルート", desc: "単元全体の見取り図" },
-    { href: "/glossary/accountability", label: "用語: 可説明可能性", desc: "EMの見方の入口" },
-    { href: "/worksheets/ws-l1", label: "WS1 観察ログ", desc: "授業内ミニ活動・提出用" },
-    { href: "/faq", label: "FAQ", desc: "止まりやすい点の確認" },
-  ];
-
   return (
     <section className="card reveal">
       <p className="section-kicker">入門</p>
-      <h1>はじめに読むページ</h1>
+      <h1>開始前チェック（3分）</h1>
       <p>
-        エスノメソドロジー（EM）の全体像を短く確認し、授業で使うページへ移動するための入口です。
-        初回授業の準備や、授業前の確認に使う想定です。
+        ここで確認するのは4つだけです。読み終わったらすぐにL1へ進んでください。
       </p>
+      <div className="chip-row" style={{ marginTop: "0.8rem" }}>
+        <Link href="/curriculum/l1-what-is-em" className="chip-link">L1を始める</Link>
+        <Link href="/worksheets/ws-l1" className="chip-link">先にWS1を見る</Link>
+      </div>
 
-      <section className="card" aria-label="このサイトの使い方" style={{ marginTop: "1rem" }}>
-        <h2 style={{ marginTop: 0 }}>このサイトの使い方（最短）</h2>
-        <ol style={{ marginTop: "0.5rem" }}>
-          <li>まず `L1 授業ページ` を開いて授業の流れを確認する</li>
-          <li>必要に応じて図解と用語を開き、説明の順番を決める</li>
-          <li>ワークシートと FAQ を開いて授業中の補助に使う</li>
-        </ol>
+      <section className="card" aria-label="開始チェック" style={{ marginTop: "1rem" }}>
+        <h2 style={{ marginTop: 0 }}>開始チェック</h2>
+        <ul style={{ marginTop: "0.5rem" }}>
+          <li>観察できる事実（発話・行為・順序）を根拠にする</li>
+          <li>主張にはデータ箇所を対応づける</li>
+          <li>限界や別解を1点以上書く</li>
+          <li>同意・匿名化・安全性を先に確認する</li>
+        </ul>
       </section>
 
-      <section className="card" aria-label="最初に開くリンク" style={{ marginTop: "1rem" }}>
-        <h2 style={{ marginTop: 0 }}>最初に開くリンク</h2>
+      <section className="card" aria-label="詰まり予防" style={{ marginTop: "1rem" }}>
+        <h2 style={{ marginTop: 0 }}>よくある詰まり</h2>
+        <ul style={{ marginTop: "0.5rem" }}>
+          <li>印象だけで結論を書く（根拠が抜ける）</li>
+          <li>観察と評価を混ぜる（再現できない）</li>
+          <li>引用元なしで要約だけ書く（検証できない）</li>
+        </ul>
+      </section>
+
+      <section className="card" aria-label="次の行動" style={{ marginTop: "1rem" }}>
+        <h2 style={{ marginTop: 0 }}>この後にやること</h2>
         <div className="grid two">
-          {starterLinks.map((item) => (
-            <article key={item.href} className="card">
-              <h3 style={{ marginTop: 0 }}>
-                <Link href={item.href}>{item.label}</Link>
-              </h3>
-              <p>{item.desc}</p>
-            </article>
-          ))}
+          <article className="card">
+            <h3 style={{ marginTop: 0 }}><Link href="/curriculum/l1-what-is-em">L1を開く</Link></h3>
+            <p>まず授業本文を読み、観察の視点を理解する。</p>
+          </article>
+          <article className="card">
+            <h3 style={{ marginTop: 0 }}><Link href="/worksheets/ws-l1">WS1を提出する</Link></h3>
+            <p>L1の内容を使って最初の観察ログを作る。</p>
+          </article>
         </div>
       </section>
 
-      {intro ? (
-        <>
-          <section className="card" aria-label="最初の授業の内容" style={{ marginTop: "1rem" }}>
-            <div className="detail-meta-row">
-              <h2 style={{ margin: 0 }}>最初に読む授業の内容</h2>
-              <Link href={`/curriculum/${intro.slug}`} className="chip-link">
-                授業ページへ移動
-              </Link>
-            </div>
-            <p className="meta">
-              授業 {String(intro.lesson_no ?? 1)} コマ目 / {String(intro.duration_min ?? 50)}分
-            </p>
-            <MarkdownBody body={intro.body} />
-          </section>
-          <SourceLinks sourceIds={intro.sources} />
-        </>
-      ) : (
-        <p className="meta">授業データがまだありません。</p>
-      )}
+      <section className="card" aria-label="補助リンク" style={{ marginTop: "1rem" }}>
+        <h2 style={{ marginTop: 0 }}>困ったとき</h2>
+        <div className="grid two">
+          <article className="card">
+            <h3 style={{ marginTop: 0 }}><Link href="/faq">FAQ</Link></h3>
+            <p>まず短答で詰まりを解消する。</p>
+          </article>
+          <article className="card">
+            <h3 style={{ marginTop: 0 }}><Link href="/figures/fig-learning-route">学習ルート図</Link></h3>
+            <p>全体像を図で確認して再開する。</p>
+          </article>
+        </div>
+      </section>
     </section>
   );
 }

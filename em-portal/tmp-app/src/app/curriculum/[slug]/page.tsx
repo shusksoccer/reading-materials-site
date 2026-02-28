@@ -157,6 +157,8 @@ export default async function LessonDetailPage({
   if (!lesson) notFound();
 
   const lessonToolkit = getLessonToolkit(lesson.slug);
+  const objectives = Array.isArray(lesson.objectives) ? lesson.objectives : [];
+  const prereq = Array.isArray(lesson.prereq) ? lesson.prereq : [];
 
   return (
     <article>
@@ -176,6 +178,15 @@ export default async function LessonDetailPage({
           ))}
         </div>
       </header>
+
+      <section className="card reveal" aria-label="この授業でやること">
+        <h2 style={{ marginTop: 0 }}>この授業でやること（先に確認）</h2>
+        <ol style={{ marginTop: "0.4rem", paddingLeft: "1.1rem" }}>
+          <li>本文を読み、観察可能な根拠を押さえる</li>
+          <li>対応ワークを実施して提出物を作る</li>
+          <li>FAQで詰まりを解消し、次の授業へ進む</li>
+        </ol>
+      </section>
 
       {lessonToolkit ? (
         <section className="card reveal" aria-label="この授業で使うリンク">
@@ -203,6 +214,43 @@ export default async function LessonDetailPage({
           </div>
         </section>
       ) : null}
+
+      <section className="card reveal" aria-label="高探究チェック">
+        <h2 style={{ marginTop: 0 }}>高探究チェック</h2>
+        {objectives.length ? (
+          <>
+            <p className="meta">この回の到達目標</p>
+            <ul style={{ marginTop: "0.4rem" }}>
+              {objectives.map((item) => (
+                <li key={String(item)}>{String(item)}</li>
+              ))}
+            </ul>
+          </>
+        ) : null}
+        {prereq.length ? (
+          <p className="meta" style={{ marginTop: "0.8rem" }}>
+            前提授業: {prereq.map((item) => String(item)).join(" / ")}
+          </p>
+        ) : null}
+        <div className="grid two" style={{ marginTop: "0.8rem" }}>
+          <article className="card">
+            <h3 style={{ marginTop: 0 }}>根拠</h3>
+            <p>主張ごとに、対応するデータ箇所を示す。</p>
+          </article>
+          <article className="card">
+            <h3 style={{ marginTop: 0 }}>限界</h3>
+            <p>別解または不足データを1点以上書く。</p>
+          </article>
+          <article className="card">
+            <h3 style={{ marginTop: 0 }}>再現性</h3>
+            <p>手順を他者が追える形で残す。</p>
+          </article>
+          <article className="card">
+            <h3 style={{ marginTop: 0 }}>倫理</h3>
+            <p>同意・匿名化・安全性の確認を残す。</p>
+          </article>
+        </div>
+      </section>
 
       <section className="card detail-body reveal">
         <MarkdownBody body={lesson.body} />

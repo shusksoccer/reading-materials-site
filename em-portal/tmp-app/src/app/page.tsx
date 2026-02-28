@@ -1,56 +1,43 @@
 import Link from "next/link";
 
 export default function HomePage() {
-  const links = [
-    { href: "/intro", label: "入門", desc: "最初に読むページ。授業で使う導線の入口です。" },
-    { href: "/curriculum", label: "カリキュラム", desc: "L1〜L6 の授業構成と各回の導線。" },
-    { href: "/worksheets", label: "ワーク集", desc: "授業回ごとの提出用ワークシート。" },
-    { href: "/glossary", label: "用語集", desc: "授業で使う概念を短く確認。" },
-    { href: "/figures", label: "図解", desc: "授業説明に使える図解と解説。" },
-    { href: "/library", label: "文献", desc: "授業向けに整理した文献メモ。" },
-    { href: "/people", label: "研究者", desc: "人物ごとの覚える一言と授業で使う観点。" },
-    { href: "/faq", label: "FAQ", desc: "授業で止まりやすい点の短答集。" },
-    { href: "/search", label: "検索", desc: "用語・図解・文献・ワークを横断検索。" },
-    { href: "/tags", label: "タグ", desc: "観点別に教材を探す。" },
+  const startNow = [
+    { href: "/intro", label: "1. 前提を3分で確認", desc: "まずここだけ読めば開始できます。" },
+    { href: "/curriculum/l1-what-is-em", label: "2. L1を始める", desc: "最初の授業でEMの見方をつかみます。" },
+    { href: "/worksheets/ws-l1", label: "3. WS1を提出する", desc: "観察ログを1つ作って提出します。" },
   ];
 
-  const timeline = [
-    { no: "L1", title: "EMとは何か", desc: "EMの見方をつかみ、観察の入口をつくる。" },
-    { no: "L2", title: "観察のしかた", desc: "観察ログの型と倫理チェックを学ぶ。" },
-    { no: "L3", title: "記述とデータ化", desc: "観察ログを分析できる記述に整える。" },
-    { no: "L4", title: "会話分析の入口", desc: "順番取り・修復を短いデータで読む。" },
-    { no: "L5", title: "背景期待とブリーチング", desc: "安全な模擬データで期待の破れを分析する。" },
-    { no: "L6", title: "発表計画", desc: "問い・方法・根拠・倫理・限界をまとめる。" },
-  ];
-
-  const aiWorkflowLinks = [
-    { href: "/library?status=inbox", label: "収集中（inbox）", desc: "AIで収集した文献メモの確認入口。" },
-    { href: "/library?status=reviewed", label: "レビュー済み", desc: "人間レビューを終えた文献メモ。" },
-    { href: "/library?status=published", label: "公開用", desc: "授業で使う前提の文献メモ。" },
-    { href: "/search", label: "横断検索", desc: "用語・図解・ワーク・文献をまとめて検索。" },
+  const stuckHelp = [
+    { href: "/faq", label: "詰まったとき: FAQ", desc: "まずここを見て30秒で再開。" },
+    { href: "/glossary", label: "言葉が分からない: 用語", desc: "用語の意味を短く確認。" },
+    { href: "/figures", label: "手順が分からない: 図解", desc: "流れを図で確認。" },
   ];
 
   return (
     <>
       <section className="card home-hero reveal">
-        <span className="home-kicker">授業で使える EM ポータル</span>
-        <h1>エスノメソドロジー授業用ポータル</h1>
+        <span className="home-kicker">EM 探究ポータル</span>
+        <h1>何をすればいいかが1分で分かる入口</h1>
         <p>
-          観察・記述・分析・発表までを、用語、図解、ワーク、FAQで支える授業向けサイトです。
-          AIで収集した情報をレビューして整理し、日本語で授業に使える形にまとめています。
+          迷ったらこのページだけ見てください。今やることは3つだけです。
+          前提確認 → L1 → WS1 の順で進めれば、最初の提出まで到達できます。
         </p>
+        <div className="chip-row" style={{ marginTop: "0.8rem" }}>
+          <Link href="/intro" className="chip-link">今すぐ始める</Link>
+          <Link href="/curriculum" className="chip-link">全6コマを見る</Link>
+        </div>
       </section>
 
       <section className="card reveal">
         <div className="timeline-head">
           <div>
-            <p className="section-kicker">AI運用</p>
-            <h2>AI収集・整理の作業導線</h2>
+            <p className="section-kicker">最短ルート</p>
+            <h2>今やること（この順番）</h2>
           </div>
-          <Link href="/library?status=inbox">収集中の文献を見る</Link>
+          <Link href="/intro">ステップ1へ</Link>
         </div>
-        <div className="grid two" aria-label="AI運用ショートカット">
-          {aiWorkflowLinks.map((item) => (
+        <div className="grid two" aria-label="今やること">
+          {startNow.map((item) => (
             <article key={item.href} className="card">
               <h3>
                 <Link href={item.href}>{item.label}</Link>
@@ -64,31 +51,35 @@ export default function HomePage() {
       <section className="card reveal">
         <div className="timeline-head">
           <div>
-            <p className="section-kicker">授業の流れ</p>
-            <h2>6コマの進行</h2>
+            <p className="section-kicker">進み方</p>
+            <h2>6コマの全体像</h2>
           </div>
           <Link href="/curriculum">授業一覧を見る</Link>
         </div>
-        <div className="lesson-timeline" aria-label="授業タイムライン">
-          {timeline.map((step) => (
-            <article key={step.no} className="timeline-step">
-              <span className="timeline-no">{step.no}</span>
-              <h3>{step.title}</h3>
-              <p>{step.desc}</p>
+        <ol style={{ marginTop: "0.4rem", paddingLeft: "1.1rem" }}>
+          <li>L1-L2: 観察の基本を身につける</li>
+          <li>L3-L5: 記述と分析を練習する</li>
+          <li>L6: 自分のミニ実践計画を完成させる</li>
+        </ol>
+      </section>
+
+      <section className="card reveal">
+        <div className="timeline-head">
+          <div>
+            <p className="section-kicker">困ったとき</p>
+            <h2>再開用リンク</h2>
+          </div>
+        </div>
+        <div className="grid two home-links" aria-label="再開用リンク">
+          {stuckHelp.map((item) => (
+            <article key={item.href} className="card">
+              <h3>
+                <Link href={item.href}>{item.label}</Link>
+              </h3>
+              <p>{item.desc}</p>
             </article>
           ))}
         </div>
-      </section>
-
-      <section className="grid two home-links reveal" aria-label="主要ページ">
-        {links.map((item) => (
-          <article key={item.href} className="card">
-            <h2>
-              <Link href={item.href}>{item.label}</Link>
-            </h2>
-            <p>{item.desc}</p>
-          </article>
-        ))}
       </section>
     </>
   );
