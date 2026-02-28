@@ -21,6 +21,7 @@ export default async function GlossaryDetailPage({
   const aliases = Array.isArray(term.aliases) ? term.aliases.map(String).filter(Boolean) : [];
   const related = Array.isArray(term.related) ? term.related.map(String).filter(Boolean) : [];
   const examples = Array.isArray(term.examples) ? term.examples.map(String).filter(Boolean) : [];
+  const usedInLessons = Array.isArray(term.used_in_lessons) ? term.used_in_lessons.map(String).filter(Boolean) : [];
 
   return (
     <article>
@@ -37,6 +38,16 @@ export default async function GlossaryDetailPage({
             </Link>
           ))}
         </div>
+        {usedInLessons.length > 0 ? (
+          <div style={{ marginTop: "0.6rem" }}>
+            <span className="meta">この用語を使う授業: </span>
+            {usedInLessons.map((lessonSlug) => (
+              <Link key={lessonSlug} href={`/curriculum/${lessonSlug}`} className="chip-link" style={{ marginLeft: "0.3rem" }}>
+                {lessonSlug}
+              </Link>
+            ))}
+          </div>
+        ) : null}
       </header>
 
       <section className="card reveal" aria-label="用語概要">

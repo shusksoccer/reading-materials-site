@@ -13,6 +13,26 @@ type ParsedSection =
   | { type: "line"; text: string }
   | { type: "custom-block"; blockType: CustomBlockType; title?: string; content: string };
 
+function slugifyHeading(text: string): string {
+  return text
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w\-ぁ-んァ-ン一-龠]/g, "")
+    .toLowerCase();
+}
+
+function extractToc(body: string): { id: string; text: string }[] {
+  return body
+    .split("\n")
+    .filter((line) => line.startsWith("## "))
+    .map((line) => {
+      const text = line.replace(/^##\s+/, "").trim();
+      const id = slugifyHeading(text);
+      return { id, text };
+    })
+    .filter((item) => item.id && item.text);
+}
+
 function getYoutubeId(url: string): string | null {
   try {
     const parsed = new URL(url);
@@ -192,7 +212,10 @@ function renderLine(line: string, index: number): ReactNode {
   if (!trimmed) return <br key={`br-${index}`} />;
 
   if (trimmed.startsWith("### ")) return <h3 key={index}>{trimmed.slice(4)}</h3>;
-  if (trimmed.startsWith("## ")) return <h2 key={index}>{trimmed.slice(3)}</h2>;
+  if (trimmed.startsWith("## ")) {
+    const text = trimmed.slice(3).trim();
+    return <h2 key={index} id={slugifyHeading(text)}>{text}</h2>;
+  }
   if (trimmed.startsWith("# ")) return <h1 key={index}>{trimmed.slice(2)}</h1>;
 
   const ytId = getYoutubeId(trimmed);
@@ -251,6 +274,7 @@ function renderLine(line: string, index: number): ReactNode {
 }
 
 export function MarkdownBody({ body }: { body: string }) {
+  const toc = extractToc(body);
   const lines = body.split("\n");
   const sections = parseCustomBlocks(lines);
   const nodes: ReactNode[] = [];
@@ -286,5 +310,21 @@ export function MarkdownBody({ body }: { body: string }) {
   });
   flushList();
 
-  return <div className="prose">{nodes}</div>;
+  return (
+    <div className="prose">
+      {toc.length >= 2 ? (
+        <nav aria-label="このページの目次" style={{ marginBottom: "1.2rem" }}>
+          <p className="meta" style={{ marginBottom: "0.4rem" }}>目次</p>
+          <ol style={{ margin: 0, paddingLeft: "1.2rem", fontSize: "0.9rem", lineHeight: 1.8 }}>
+            {toc.map((item) => (
+              <li key={item.id}>
+                <a href={`#${item.id}`} style={{ color: "var(--accent)" }}>{item.text}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      ) : null}
+      {nodes}
+    </div>
+  );
 }

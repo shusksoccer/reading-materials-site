@@ -1,45 +1,27 @@
-﻿import Link from "next/link";
-import { MarkdownBody } from "@/components/markdown-body";
-import { SourceLinks } from "@/components/source-links";
+import Link from "next/link";
+import { LibraryCard } from "@/components/library-card";
 import { getCollection } from "@/lib/content";
-import {
-  STATUS_OPTIONS,
-  type StatusFilter,
-  getStatusLabel,
-  getStatusValue,
-  parseStatusFilter,
-} from "@/lib/status-filter";
-
-function getHostLabel(urlValue: unknown): string {
-  const url = String(urlValue ?? "");
-  try {
-    return new URL(url).hostname.replace(/^www\./, "");
-  } catch {
-    return "-";
-  }
-}
 
 export default async function LibraryPage({
   searchParams,
 }: {
-  searchParams?: Promise<{ status?: string | string[] }>;
+  searchParams?: Promise<{ stage?: string | string[] }>;
 }) {
   const docs = getCollection("library");
+  const visibleDocs = docs.filter((doc) => String(doc.content_track ?? "") !== "draft");
   const filterChips = ["基礎", "観察", "会話分析", "倫理", "発表"];
   const params = searchParams ? await searchParams : {};
-  const statusFilter = parseStatusFilter(params?.status);
+  const stageRaw = Array.isArray(params?.stage) ? params?.stage[0] : params?.stage;
+  const stageFilter = stageRaw === "理解" || stageRaw === "練習" || stageRaw === "自力実践"
+    ? stageRaw
+    : "all";
 
-  const statusCounts = {
-    all: docs.length,
-    inbox: docs.filter((doc) => getStatusValue(doc.status) === "inbox").length,
-    reviewed: docs.filter((doc) => getStatusValue(doc.status) === "reviewed").length,
-    published: docs.filter((doc) => getStatusValue(doc.status) === "published").length,
-    unknown: docs.filter((doc) => getStatusValue(doc.status) === "unknown").length,
-  } satisfies Record<StatusFilter, number>;
+  const filteredDocs = stageFilter === "all"
+    ? visibleDocs
+    : visibleDocs.filter((doc) => String(doc.learning_stage ?? "") === stageFilter);
 
-  const filteredDocs = statusFilter === "all"
-    ? docs
-    : docs.filter((doc) => getStatusValue(doc.status) === statusFilter);
+  const coreDocs = filteredDocs.filter((doc) => String(doc.content_track ?? "supplement") === "core");
+  const supplementDocs = filteredDocs.filter((doc) => String(doc.content_track ?? "supplement") !== "core");
 
   return (
     <section>
@@ -47,15 +29,17 @@ export default async function LibraryPage({
         <p className="section-kicker">文献</p>
         <h1>文献リスト</h1>
         <p>
-          授業で使う順に読みやすい短い文献メモです。難易度・用途・読むポイントが先に見える形にしています。
+          学習段階ごとに読む順番を整理しています。まず `core` を読み、必要に応じて `supplement` を参照してください。
         </p>
-        <p className="meta">状態: {getStatusLabel(statusFilter)} / {filteredDocs.length}件表示</p>
-        <div className="chip-row" aria-label="状態フィルタ">
-          {STATUS_OPTIONS.map((status) => {
-            const href = status === "all" ? "/library" : `/library?status=${status}`;
+        <p className="meta">学習段階: {stageFilter === "all" ? "全段階" : stageFilter} / {filteredDocs.length}件表示</p>
+        <div className="chip-row" aria-label="学習段階フィルタ">
+          {(["all", "理解", "練習", "自力実践"] as const).map((stage) => {
+            const href = stage === "all"
+              ? "/library"
+              : `/library?stage=${encodeURIComponent(stage)}`;
             return (
-              <Link key={status} href={href} className="chip-link" aria-current={statusFilter === status ? "page" : undefined}>
-                {getStatusLabel(status)} ({statusCounts[status]})
+              <Link key={stage} href={href} className="chip-link" aria-current={stageFilter === stage ? "page" : undefined}>
+                {stage === "all" ? "全段階" : stage}
               </Link>
             );
           })}
@@ -69,50 +53,30 @@ export default async function LibraryPage({
         </div>
       </div>
 
-      <div className="grid">
-        {filteredDocs.map((doc) => (
-          <article key={doc.slug} className="card">
-            <h2 style={{ marginBottom: "0.35rem" }}>{doc.title}</h2>
-            <p className="meta" style={{ marginTop: 0 }}>
-              著者: {String(doc.author ?? "-")} / 年: {String(doc.year ?? "-")} / 状態: {getStatusLabel(getStatusValue(doc.status))}
-            </p>
+      <section>
+        <div className="detail-meta-row" style={{ marginBottom: "0.75rem" }}>
+          <h2 style={{ margin: 0 }}>優先文献（core）</h2>
+          <span className="meta">{coreDocs.length}件</span>
+        </div>
+        <div className="grid">
+          {coreDocs.map((doc) => (
+            <LibraryCard key={doc.slug} doc={doc} href="/library" />
+          ))}
+        </div>
+      </section>
 
-            <section className="card" aria-label="文献概要" style={{ marginTop: "0.75rem", padding: "0.9rem" }}>
-              <p className="meta" style={{ marginTop: 0 }}>文献概要</p>
-              <div className="grid two">
-                <div>
-                  <p className="meta">難易度</p>
-                  <p>{String(doc.difficulty ?? "-")}</p>
-                </div>
-                <div>
-                  <p className="meta">使いどころ</p>
-                  <p>{String(doc.use_case ?? "-")}</p>
-                </div>
-                <div>
-                  <p className="meta">出典サイト</p>
-                  <p>{getHostLabel(doc.url)}</p>
-                </div>
-                <div>
-                  <p className="meta">外部リンク</p>
-                  <p>
-                    <Link href={String(doc.url ?? "#")} target="_blank" rel="noreferrer">
-                      開く
-                    </Link>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <details style={{ marginTop: "0.85rem" }}>
-              <summary style={{ cursor: "pointer", fontWeight: 600 }}>メモを開く</summary>
-              <div style={{ marginTop: "0.75rem" }}>
-                <MarkdownBody body={doc.body} />
-                <SourceLinks sourceIds={doc.sources} />
-              </div>
-            </details>
-          </article>
-        ))}
-      </div>
+      {supplementDocs.length ? (
+        <section style={{ marginTop: "1rem" }}>
+          <details open>
+            <summary style={{ cursor: "pointer", fontWeight: 700 }}>補助文献（supplement） {supplementDocs.length}件</summary>
+            <div className="grid" style={{ marginTop: "0.8rem" }}>
+              {supplementDocs.map((doc) => (
+                <LibraryCard key={doc.slug} doc={doc} href="/library" />
+              ))}
+            </div>
+          </details>
+        </section>
+      ) : null}
     </section>
   );
 }
