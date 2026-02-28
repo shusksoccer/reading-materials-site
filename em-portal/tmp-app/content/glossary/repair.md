@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "repair"
 title: "修復（Repair）"
 tags: ["会話分析","用語","分析"]
 sources: ["isca-turntaking-1974","isca-overlap-2000"]
 status: "published"
+used_in_lessons: ["l4-ca-entry"]
 ---
 
 # 修復（Repair）

@@ -8,6 +8,7 @@ examples: ["学校","SNS"]
 tags: ["用語","分析","方法"]
 sources: ["src-em-intro","src-ca-basics"]
 status: "reviewed"
+used_in_lessons: ["l6-project"]
 ---
 
 # 妥当性（Validity）

@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "overlap"
 title: "重なり発話（Overlap）"
 tags: ["会話分析","用語","順番取り"]
 sources: "isca-overlap-2000"
 status: "published"
+used_in_lessons: ["l4-ca-entry"]
 ---
 
 # 重なり発話（Overlap）

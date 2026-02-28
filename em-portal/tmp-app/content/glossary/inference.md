@@ -8,6 +8,7 @@ examples: ["学校","SNS"]
 tags: ["用語","分析","基礎"]
 sources: ["src-em-intro","src-ca-basics"]
 status: "reviewed"
+used_in_lessons: ["l3-how-to-describe","l6-project"]
 ---
 
 # 推論（Inference）

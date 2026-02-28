@@ -8,6 +8,7 @@ examples: ["学校","SNS"]
 tags: ["用語","会話分析","制度"]
 sources: ["src-em-intro","src-ca-basics"]
 status: "reviewed"
+used_in_lessons: ["l4-ca-entry","l6-project"]
 ---
 
 # 制度的会話（Institutional Talk）

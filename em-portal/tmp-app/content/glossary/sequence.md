@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "sequence"
 title: "連鎖（Sequence）"
 tags: ["会話分析","用語","順序"]
 sources: "isca-turntaking-1974"
 status: "published"
+used_in_lessons: ["l3-how-to-describe","l4-ca-entry"]
 ---
 
 # 連鎖（Sequence）

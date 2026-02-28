@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "indexicality"
 title: "文脈依存性（Indexicality）"
 tags: ["基礎","用語","記述"]
 sources: ["britannica-em","wiley-sem"]
 status: "published"
+used_in_lessons: ["l1-what-is-em","l4-ca-entry"]
 ---
 
 # 文脈依存性（Indexicality）

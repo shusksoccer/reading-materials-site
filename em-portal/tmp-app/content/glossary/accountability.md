@@ -4,6 +4,7 @@ title: "可説明可能性（Accountability）"
 tags: ["基礎","用語","観察"]
 sources: ["britannica-em","wiley-sem"]
 status: "published"
+used_in_lessons: ["l1-what-is-em","l3-how-to-describe"]
 ---
 
 # 可説明可能性（Accountability）

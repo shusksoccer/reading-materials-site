@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "ethics"
 title: "倫理（Ethics）"
 tags: ["倫理","用語","基礎"]
 sources: "britannica-em"
 status: "published"
+used_in_lessons: ["l2-how-to-observe","l5-breaching","l6-project"]
 ---
 
 # 倫理（Ethics）

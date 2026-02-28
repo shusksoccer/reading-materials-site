@@ -8,6 +8,7 @@ examples: ["学校","SNS"]
 tags: ["用語","基礎","観察"]
 sources: ["src-em-intro","src-ca-basics"]
 status: "reviewed"
+used_in_lessons: ["l1-what-is-em","l5-breaching"]
 ---
 
 # 規範（Norm）

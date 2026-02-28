@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "breaching"
 title: "ブリーチング（Breaching）"
 tags: ["基礎","用語","倫理"]
 sources: ["wiley-sem","wikipedia-garfinkel"]
 status: "reviewed"
+used_in_lessons: ["l5-breaching"]
 ---
 
 # ブリーチング（Breaching）

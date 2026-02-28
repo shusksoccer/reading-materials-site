@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "reflexivity"
 title: "反射性（Reflexivity）"
 tags: ["基礎","用語","分析"]
 sources: ["britannica-em","wiley-sem"]
 status: "reviewed"
+used_in_lessons: ["l1-what-is-em","l3-how-to-describe"]
 ---
 
 # 反射性（Reflexivity）

@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "transcript"
 title: "転写（Transcript）"
 tags: ["転写","用語","記述"]
 sources: ["talkresearch-transcription","talkbank-jefferson-nb"]
 status: "published"
+used_in_lessons: ["l3-how-to-describe","l4-ca-entry"]
 ---
 
 # 転写（Transcript）

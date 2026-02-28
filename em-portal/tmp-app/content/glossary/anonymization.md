@@ -4,6 +4,7 @@ title: "匿名化（Anonymization）"
 tags: ["倫理","用語","記録"]
 sources: "talkbank-jefferson-nb"
 status: "published"
+used_in_lessons: ["l2-how-to-observe","l6-project"]
 ---
 
 # 匿名化（Anonymization）

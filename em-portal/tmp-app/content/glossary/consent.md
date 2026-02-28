@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "consent"
 title: "同意（Consent）"
 tags: ["倫理","用語","観察"]
 sources: "britannica-em"
 status: "published"
+used_in_lessons: ["l2-how-to-observe","l5-breaching"]
 ---
 
 # 同意（Consent）

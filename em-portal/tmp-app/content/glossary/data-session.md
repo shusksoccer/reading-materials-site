@@ -8,6 +8,7 @@ examples: ["学校","SNS"]
 tags: ["用語","方法","分析"]
 sources: ["src-em-intro","src-ca-basics"]
 status: "reviewed"
+used_in_lessons: ["l3-how-to-describe"]
 ---
 
 # データセッション（Data Session）

@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "background-expectancies"
 title: "背景的期待（Background expectancies）"
 tags: ["基礎","用語","分析"]
 sources: ["wiley-sem","wikipedia-garfinkel"]
 status: "published"
+used_in_lessons: ["l1-what-is-em","l5-breaching"]
 ---
 
 # 背景的期待（Background expectancies）

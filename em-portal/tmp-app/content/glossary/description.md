@@ -1,9 +1,10 @@
-﻿---
+---
 slug: "description"
 title: "記述（Description）"
 tags: ["記述","用語","基礎"]
 sources: ["britannica-em","wiley-sem"]
 status: "published"
+used_in_lessons: ["l3-how-to-describe"]
 ---
 
 # 記述（Description）

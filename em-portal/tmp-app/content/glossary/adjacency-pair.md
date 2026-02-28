@@ -4,6 +4,7 @@ title: "隣接ペア（Adjacency Pair）"
 tags: ["会話分析","用語","順序"]
 sources: "isca-turntaking-1974"
 status: "published"
+used_in_lessons: ["l4-ca-entry"]
 ---
 
 # 隣接ペア（Adjacency Pair）
