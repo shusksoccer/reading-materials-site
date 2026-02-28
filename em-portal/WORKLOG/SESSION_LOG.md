@@ -80,4 +80,10 @@
 - Phase 5 release-freeze checks completed and documented in `WORKLOG/PHASE5_RELEASE_CHECK.md` (major-page wording/status/build).
 - Verified public content status integrity: missing status 0, invalid status 0 (excluding `_drafts`, `_sources`).
 - Build passed for release-candidate freeze (`npm.cmd run build`, 2026-02-28).
+- Added local completion-notification workflow: `ops/Notify-TaskDone.ps1` and integrated calls in `ops/Publish-Portal.ps1`; updated `README-運用.md` usage notes.
+- Implemented REDESIGN_SPEC Phase 1 UI foundation: content-type block CSS, step-card top flow, lesson phase badge + lesson-nav-bar, glossary dedicated cards, and card-kind visual cues.
+- Implemented REDESIGN_SPEC Phase 3 authoring support: markdown custom blocks (`:::concept/example/exercise/caution/transcript`) and `content/lessons/TEMPLATE.md`.
+- Implemented REDESIGN additional improvements A-D: ToC auto-generation in lesson body, glossary lesson backlinks UI, library stage-first filtering, and type-color cues expanded to figures/faq/people cards.
+- Added `used_in_lessons` frontmatter to all 30 glossary entries to activate lesson backlink navigation.
+- Build passed after each redesign batch (`npm.cmd run build`, 2026-02-28).
 
