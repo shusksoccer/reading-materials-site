@@ -67,6 +67,48 @@ export default function IntroPage() {
         </p>
       </section>
 
+      {/* EMの発見 */}
+      <section className="card reveal">
+        <p className="section-kicker">EMが見つけたこと</p>
+        <h2>「当たり前」が崩れたとき、仕組みが見えた</h2>
+        <p style={{ marginBottom: "1rem" }}>
+          EMは思弁ではなく観察から出発します。以下は、実際の研究が明らかにした驚くべき発見です。
+        </p>
+        <div style={{ display: "grid", gap: "1rem" }}>
+          <div className="intro-finding-card">
+            <p className="intro-finding-no">発見 1</p>
+            <strong className="intro-finding-title">「なぜ？」を繰り返すだけで会話は崩壊する</strong>
+            <p className="intro-finding-body">
+              ガーフィンケルは学生に、日常会話の相手の発言すべてに「なぜそう思うの？」と真剣に問い返させました。
+              数回のやりとりで相手は怒り、混乱し、会話は成立しなくなりました。
+              「普通の会話」は、膨大な暗黙の前提と協定の上に成り立っているのです。
+            </p>
+            <p className="intro-finding-insight">→ 壊してみることで初めて、秩序の設計図が見えてくる</p>
+          </div>
+          <div className="intro-finding-card">
+            <p className="intro-finding-no">発見 2</p>
+            <strong className="intro-finding-title">会話の「間」は200ミリ秒以下に設計されている</strong>
+            <p className="intro-finding-body">
+              Sacksらが世界中の会話を詳細に分析すると、話者交代の「間」は平均200ミリ秒（0.2秒）しかありませんでした。
+              これは人間の反応時間より短い——つまり相手が言い終わる前に、次の発話を準備しています。
+              誰に教わったわけでもなく、全文化でこの精密さが確認されました。
+            </p>
+            <p className="intro-finding-insight">→「自然な会話」は、無意識の精密な協調作業だった</p>
+          </div>
+          <div className="intro-finding-card">
+            <p className="intro-finding-no">発見 3</p>
+            <strong className="intro-finding-title">ジェンダーは「持つ」ものではなく「する」もの</strong>
+            <p className="intro-finding-body">
+              ガーフィンケルはアグネスという人物を研究しました。彼女は「女性として見られる」ために、
+              服装・話し方・動作など膨大な日常実践を意識的に行っていました。
+              この研究が示したのは、「女性であること」は生まれつき与えられた属性ではなく、
+              毎日の相互行為の中で絶え間なく達成・維持されているということです。
+            </p>
+            <p className="intro-finding-insight">→ 社会的カテゴリーは与えられるのではなく、実践される</p>
+          </div>
+        </div>
+      </section>
+
       {/* 探究サイクル */}
       <section className="card reveal">
         <p className="section-kicker">探究の進め方</p>

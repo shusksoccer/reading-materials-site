@@ -2150,6 +2150,43 @@ input:focus-visible {
   line-height: 1.6;
 }
 
+/* ── intro finding cards ─────────────────────────────── */
+.intro-finding-card {
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem 1rem;
+  background: var(--sand);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.intro-finding-no {
+  margin: 0 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.intro-finding-title {
+  display: block;
+  font-size: 0.97rem;
+  margin-bottom: 0.4rem;
+}
+
+.intro-finding-body {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.intro-finding-insight {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .intro-action-card {
   display: flex;
   flex-direction: column;
