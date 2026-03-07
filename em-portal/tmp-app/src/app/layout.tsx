@@ -34,9 +34,12 @@ export const metadata: Metadata = {
 
 const navItems = [
   { href: "/intro", label: "EMとは", sub: "" },
-  { href: "/curriculum/l1-what-is-em", label: "観察する", sub: "L1–L2" },
-  { href: "/curriculum/l3-how-to-describe", label: "記述・分析", sub: "L3–L5" },
-  { href: "/curriculum/l6-project", label: "まとめる", sub: "L6" },
+  { href: "/curriculum/l1-what-is-em", label: "L1", sub: "EMとは" },
+  { href: "/curriculum/l2-how-to-observe", label: "L2", sub: "観察" },
+  { href: "/curriculum/l3-how-to-describe", label: "L3", sub: "記述" },
+  { href: "/curriculum/l4-ca-entry", label: "L4", sub: "会話分析" },
+  { href: "/curriculum/l5-breaching", label: "L5", sub: "実験" },
+  { href: "/curriculum/l6-project", label: "L6", sub: "まとめ" },
   { href: "/reference", label: "参照", sub: "" },
 ];
 

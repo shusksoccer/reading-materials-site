@@ -52,6 +52,20 @@ function getNextLessonHrefFromWorksheet(slug: string): string | null {
   return map[no] ?? null;
 }
 
+function getPrevWorksheetHref(slug: string): string | null {
+  const match = slug.match(/^ws-l(\d+)$/);
+  if (!match) return null;
+  const no = Number(match[1]);
+  return no > 1 ? `/worksheets/ws-l${no - 1}` : null;
+}
+
+function getNextWorksheetHref(slug: string): string | null {
+  const match = slug.match(/^ws-l(\d+)$/);
+  if (!match) return null;
+  const no = Number(match[1]);
+  return no < 6 ? `/worksheets/ws-l${no + 1}` : null;
+}
+
 export function generateStaticParams() {
   return getCollection("worksheets").map((item) => ({ slug: item.slug }));
 }
@@ -68,6 +82,8 @@ export default async function WorksheetDetailPage({
   const rubricItems = getRubricItems(worksheet.rubric);
   const lessonHref = getLessonHrefFromWorksheet(worksheet.slug);
   const nextLessonHref = getNextLessonHrefFromWorksheet(worksheet.slug);
+  const prevWorksheetHref = getPrevWorksheetHref(worksheet.slug);
+  const nextWorksheetHref = getNextWorksheetHref(worksheet.slug);
   const cycleStep = getWorksheetCycleStep(worksheet.slug);
   const finalPracticeLinks = worksheet.slug === "ws-l6"
     ? [
@@ -127,7 +143,17 @@ export default async function WorksheetDetailPage({
           </p>
         ) : null}
         <section style={{ marginTop: "0.9rem" }} aria-label="次のアクション">
-          <p className="meta" style={{ marginBottom: "0.4rem" }}>次のアクション</p>
+          <p className="meta" style={{ marginBottom: "0.4rem" }}>ワークシートを移動</p>
+          <div className="chip-row">
+            {prevWorksheetHref ? (
+              <Link href={prevWorksheetHref} className="chip-link">← 前のワーク</Link>
+            ) : null}
+            <Link href="/worksheets" className="chip-link">ワーク一覧</Link>
+            {nextWorksheetHref ? (
+              <Link href={nextWorksheetHref} className="chip-link">次のワーク →</Link>
+            ) : null}
+          </div>
+          <p className="meta" style={{ margin: "0.7rem 0 0.4rem" }}>次のアクション</p>
           <div className="chip-row">
             <Link href="/faq" className="chip-link">FAQで詰まりを確認</Link>
             {nextLessonHref ? (
@@ -135,7 +161,6 @@ export default async function WorksheetDetailPage({
             ) : (
               <Link href="/curriculum" className="chip-link">カリキュラム一覧へ戻る</Link>
             )}
-            <Link href="/worksheets" className="chip-link">ワーク一覧を見る</Link>
           </div>
           {finalPracticeLinks.length ? (
             <>
