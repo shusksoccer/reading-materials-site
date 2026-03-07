@@ -1,13 +1,13 @@
 ---
 slug: "accountability"
-title: "可説明可能性（Accountability）"
+title: "説明可能性（Accountability）"
 tags: ["基礎","用語","観察"]
 sources: ["britannica-em","wiley-sem"]
 status: "published"
 used_in_lessons: ["l1-what-is-em","l3-how-to-describe"]
 ---
 
-# 可説明可能性（Accountability）
+# 説明可能性（Accountability）
 
 人々が行うあらゆる行為が、その社会のメンバーにとって「見てわかる（理にかなっている）」ものであり、かつ「なぜそうしたのか」を（少なくとも事後的に）他者や自分自身に報告・説明できる状態にあることです。社会秩序の根本を支える原理です。
 
@@ -27,7 +27,7 @@ used_in_lessons: ["l1-what-is-em","l3-how-to-describe"]
 **例2：電車内での「寝たふり」**
 お年寄りが目の前に来たときに、あえて目をつぶって寝たふりをする状況。これは「お年寄りに気づいていない」という状態を周囲に対して「説明可能」な形で作ることで、「気づいているのに譲らない」という非難を回避しようとする、ひとつの社会的な工作です。
 
-## 可説明可能性のメカニズム
+## 説明可能性のメカニズム
 
 | 状態 | 特徴 | 観察される反応 |
 |---|---|---|

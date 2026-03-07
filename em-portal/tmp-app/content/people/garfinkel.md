@@ -26,7 +26,7 @@ used_in_lessons: ["l1-what-is-em","l5-breaching"]
 ## 授業で出てくる概念との対応
 
 - 背景期待（background expectancies）→ L5 ブリーチングと背景期待
-- 可説明可能性（accountability）→ L1 エスノメソドロジーとは何か
+- 説明可能性（accountability）→ L1 エスノメソドロジーとは何か
 - 指標性（indexicality）→ L1 エスノメソドロジーとは何か
 
 ## 代表的な文献
