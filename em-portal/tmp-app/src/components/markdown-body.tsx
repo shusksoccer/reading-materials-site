@@ -119,7 +119,9 @@ function renderBasicLines(content: string, keyPrefix: string): ReactNode[] {
   const nodes: ReactNode[] = [];
   let listBuffer: ReactNode[] = [];
   let orderedListBuffer: ReactNode[] = [];
+  let tableRows: string[][] = [];
   let listKey = 0;
+  let tableKey = 0;
 
   const flushUnordered = () => {
     if (listBuffer.length) {
@@ -143,14 +145,48 @@ function renderBasicLines(content: string, keyPrefix: string): ReactNode[] {
     }
   };
 
+  const flushTable = () => {
+    if (!tableRows.length) return;
+    const dataRows = tableRows.filter(
+      (row) => !row.every((cell) => /^[-: ]+$/.test(cell)),
+    );
+    if (dataRows.length) {
+      const [header, ...body] = dataRows;
+      nodes.push(
+        <div key={`${keyPrefix}-tbl-${tableKey++}`} style={{ overflowX: "auto", margin: "0.8rem 0" }}>
+          <table className="prose-table">
+            <thead>
+              <tr>{header.map((cell, i) => <th key={i}>{renderInline(cell.trim())}</th>)}</tr>
+            </thead>
+            <tbody>
+              {body.map((row, ri) => (
+                <tr key={ri}>{row.map((cell, ci) => <td key={ci}>{renderInline(cell.trim())}</td>)}</tr>
+              ))}
+            </tbody>
+          </table>
+        </div>,
+      );
+    }
+    tableRows = [];
+  };
+
   lines.forEach((line, index) => {
     const trimmed = line.trim();
     if (!trimmed) {
       flushUnordered();
       flushOrdered();
+      flushTable();
       nodes.push(<br key={`${keyPrefix}-br-${index}`} />);
       return;
     }
+
+    if (trimmed.startsWith("|") && trimmed.endsWith("|")) {
+      flushUnordered();
+      flushOrdered();
+      tableRows.push(trimmed.slice(1, -1).split("|"));
+      return;
+    }
+    flushTable();
 
     if (trimmed.startsWith("- ")) {
       flushOrdered();
@@ -172,6 +208,7 @@ function renderBasicLines(content: string, keyPrefix: string): ReactNode[] {
 
   flushUnordered();
   flushOrdered();
+  flushTable();
   return nodes;
 }
 
